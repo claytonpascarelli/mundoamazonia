@@ -10,13 +10,11 @@
 # ═══════════════════════════════════════════════════
 
 backend:
-  name: git-gateway        # Produção (Netlify Identity)
+  name: github
+  repo: claytonpascarelli/mundoamazonia
   branch: main
-  # Para testes locais, comente as linhas acima e use:
-  # name: proxy
-  # proxy_url: http://localhost:8081/api/v1
 
-local_backend: true        # Habilita proxy local automaticamente
+local_backend: true        # Para testes locais com `npx decap-server`
 
 media_folder: "images/conteudo"
 public_folder: "/images/conteudo"
