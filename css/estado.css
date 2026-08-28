@@ -1,0 +1,149 @@
+/* ============================================================
+   MUNDO AMAZÔNIA — estado.css
+   Estilos específicos para páginas de estado e município
+   ============================================================ */
+
+/* ── Info rápida do estado ── */
+.estado-quick-info {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+}
+.estado-stats {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.estado-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 28px;
+  border-right: 1px solid var(--border);
+  flex: 1;
+  min-width: 160px;
+}
+.estado-stat:last-child { border-right: none; }
+.estado-stat i {
+  font-size: 1.3rem;
+  color: var(--green-medium);
+  flex-shrink: 0;
+}
+.estado-stat strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+.estado-stat span {
+  font-size: 0.72rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .estado-stat { border-right: none; border-bottom: 1px solid var(--border); }
+  .estado-stat:last-child { border-bottom: none; }
+}
+
+/* ── Economy cards ── */
+.economy-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 4px;
+}
+.economy-card {
+  background: var(--green-ultra);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: all var(--transition);
+}
+.economy-card:hover {
+  border-color: var(--green-pale);
+  box-shadow: 0 6px 24px var(--shadow);
+  transform: translateY(-2px);
+}
+.economy-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  display: block;
+}
+.economy-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--green-darkest);
+  margin-bottom: 8px;
+}
+.economy-card p {
+  font-size: 0.85rem;
+  color: var(--text-medium);
+  line-height: 1.65;
+}
+
+/* ── Lista de municípios (painel "mais") ── */
+.estados-lista-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.estado-lista-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  transition: all var(--transition);
+}
+.estado-lista-card:hover {
+  border-color: var(--green-pale);
+  box-shadow: 0 6px 24px var(--shadow);
+  transform: translateY(-2px);
+}
+.estado-lista-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--green-darkest);
+  margin-bottom: 6px;
+}
+.estado-lista-card p {
+  font-size: 0.83rem;
+  color: var(--text-medium);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* ── Festival destacado (dentro de município) ── */
+.festival-destacado {
+  margin-top: 4px;
+}
+.festival-destacado .festival-card {
+  background: var(--green-ultra) !important;
+  border: 1px solid var(--border) !important;
+}
+.festival-destacado .festival-card h4 { color: var(--green-darkest) !important; }
+.festival-destacado .festival-card p  { color: var(--text-medium) !important; }
+.festival-destacado .festival-card .festival-period { color: var(--text-light) !important; background: var(--white) !important; }
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 14px;
+}
+.breadcrumb a { color: var(--gold-light); }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb span { color: rgba(255,255,255,0.4); margin: 0 6px; }
+
+/* ── Ajustes de painel ── */
+.muni-panel .section-title { text-align: left; }
+.muni-panel .activities-grid { margin-top: 0; }
+
+/* ── Responsivo ── */
+@media (max-width: 600px) {
+  .economy-cards { grid-template-columns: 1fr; }
+  .estados-lista-grid { grid-template-columns: 1fr; }
+  .state-hero { height: 50vh; }
+  .state-hero-content h1 { font-size: 2rem; }
+}

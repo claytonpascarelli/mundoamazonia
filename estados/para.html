@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia turístico do Pará — Belém, Ilha de Marajó, Círio de Nazaré, Ver-o-Peso, Salinópolis e muito mais.">
+  <title>Pará — Mundo Amazônia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/estado.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-bar-left"><span data-i18n="topbar.tagline">O maior bioma do planeta te espera</span></div>
+    <div class="top-bar-right">
+      <div class="top-bar-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="pt">PT</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo-link">
+      <img src="../images/logo-mundoamazonia.svg" alt="Mundo Amazônia" class="logo-img">
+    </a>
+    <nav><ul class="nav-main">
+      <li class="nav-item"><a href="../index.html#estados" class="nav-link"><span data-i18n="nav.states">Os Estados</span><i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-menu dropdown-mega">
+          <div class="mega-header">Amazônia Legal — 7 Estados</div>
+          <div class="mega-grid">
+            <a href="amazonas.html" class="mega-state-item"><div class="mega-state-flag">AM</div><div class="mega-state-info"><strong>Amazonas</strong><span>Manaus</span></div></a>
+            <a href="para.html" class="mega-state-item"><div class="mega-state-flag">PA</div><div class="mega-state-info"><strong>Pará</strong><span>Belém</span></div></a>
+            <a href="acre.html" class="mega-state-item"><div class="mega-state-flag">AC</div><div class="mega-state-info"><strong>Acre</strong><span>Rio Branco</span></div></a>
+            <a href="amapa.html" class="mega-state-item"><div class="mega-state-flag">AP</div><div class="mega-state-info"><strong>Amapá</strong><span>Macapá</span></div></a>
+            <a href="rondonia.html" class="mega-state-item"><div class="mega-state-flag">RO</div><div class="mega-state-info"><strong>Rondônia</strong><span>Porto Velho</span></div></a>
+            <a href="roraima.html" class="mega-state-item"><div class="mega-state-flag">RR</div><div class="mega-state-info"><strong>Roraima</strong><span>Boa Vista</span></div></a>
+            <a href="tocantins.html" class="mega-state-item"><div class="mega-state-flag">TO</div><div class="mega-state-info"><strong>Tocantins</strong><span>Palmas</span></div></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="../index.html#atividades" class="nav-link" data-i18n="nav.todo">O que fazer</a></li>
+      <li class="nav-item"><a href="../index.html#gastronomia" class="nav-link" data-i18n="nav.eat">Onde Comer</a></li>
+      <li class="nav-item"><a href="../index.html#hospedagem" class="nav-link" data-i18n="nav.stay">Onde Ficar</a></li>
+    </ul></nav>
+    <div class="header-actions"><button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <div class="logo-text"><span class="logo-main" style="color:white">Mundo Amazônia</span></div>
+    <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
+  </div>
+  <a class="mobile-nav-link" data-toggle="mobileStates" href="javascript:void(0)"><span>Os Estados</span><i class="fas fa-chevron-right"></i></a>
+  <div id="mobileStates" class="mobile-sub-menu" style="display:none">
+    <a class="mobile-sub-link" href="amazonas.html">Amazonas</a><a class="mobile-sub-link" href="para.html">Pará</a>
+    <a class="mobile-sub-link" href="acre.html">Acre</a><a class="mobile-sub-link" href="amapa.html">Amapá</a>
+    <a class="mobile-sub-link" href="rondonia.html">Rondônia</a><a class="mobile-sub-link" href="roraima.html">Roraima</a>
+    <a class="mobile-sub-link" href="tocantins.html">Tocantins</a>
+  </div>
+  <a class="mobile-nav-link" href="../index.html#atividades"><span>O que fazer</span><i class="fas fa-chevron-right"></i></a>
+  <a class="mobile-nav-link" href="../index.html#gastronomia"><span>Onde Comer</span><i class="fas fa-chevron-right"></i></a>
+  <div class="mobile-lang-bar">
+    <button class="mobile-lang-btn active" data-lang="pt">PT</button>
+    <button class="mobile-lang-btn" data-lang="en">EN</button>
+    <button class="mobile-lang-btn" data-lang="es">ES</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="state-hero" style="background-color:#2A5C3F; background-image:url('../images/pa-hero.jpg')">
+  <div class="container state-hero-content">
+    <p class="breadcrumb"><a href="../index.html">Início</a> › <a href="../index.html#estados">Estados</a> › Pará</p>
+    <div class="state-abbr" style="font-size:.8rem;padding:4px 14px;margin-bottom:12px">PA</div>
+    <h1>Pará</h1>
+    <p>Terra do açaí, do pato no tucupi, do Círio de Nazaré e da maior ilha fluviomarinha do mundo. O Pará é onde a floresta encontra o oceano e os sabores do Brasil se reinventam.</p>
+  </div>
+</section>
+
+<div class="estado-quick-info">
+  <div class="container">
+    <div class="estado-stats">
+      <div class="estado-stat"><i class="fas fa-city"></i><div><strong>144</strong><span>Municípios</span></div></div>
+      <div class="estado-stat"><i class="fas fa-users"></i><div><strong>8,7 mi</strong><span>Habitantes</span></div></div>
+      <div class="estado-stat"><i class="fas fa-map"></i><div><strong>1,25 mi km²</strong><span>Área</span></div></div>
+      <div class="estado-stat"><i class="fas fa-thermometer-half"></i><div><strong>26–34°C</strong><span>Temperatura</span></div></div>
+      <div class="estado-stat"><i class="fas fa-plane"></i><div><strong>Belém</strong><span>Capital / Aeroporto</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="state-tabs" id="muniTabs">
+  <div class="container">
+    <div class="state-tabs-inner">
+      <button class="state-tab-btn active" data-panel="belem">Belém</button>
+      <button class="state-tab-btn" data-panel="marajo">Ilha de Marajó</button>
+      <button class="state-tab-btn" data-panel="santarem">Santarém</button>
+      <button class="state-tab-btn" data-panel="salinopolis">Salinópolis</button>
+      <button class="state-tab-btn" data-panel="capitao-poco">Capitão Poço</button>
+      <button class="state-tab-btn" data-panel="altamira">Altamira</button>
+      <button class="state-tab-btn" data-panel="maraba">Marabá</button>
+      <button class="state-tab-btn" data-panel="mais-pa">+ Municípios</button>
+    </div>
+  </div>
+</div>
+
+<div id="muniContent">
+
+  <!-- BELÉM -->
+  <div class="muni-panel active" id="belem">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">🌆</div></div>
+        <div>
+          <span class="section-eyebrow">Capital do Pará</span>
+          <h2 class="section-title">Belém</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            Belém é a capital da Amazônia oriental, fundada em 1616 às margens da Baía do Guajará. É a cidade mais populosa da Amazônia depois de Manaus, com uma gastronomia reconhecida internacionalmente, um centro histórico de 400 anos e o Círio de Nazaré — a maior procissão religiosa do mundo. Em 2025 sediou a COP30, colocando a Amazônia no centro do debate climático mundial.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>População</label><span>1,5 milhão (metro: 2,7 mi)</span></div>
+            <div class="muni-info-item"><label>Fundação</label><span>1616</span></div>
+            <div class="muni-info-item"><label>Festivais</label><span>Círio de Nazaré (outubro)</span></div>
+            <div class="muni-info-item"><label>Gastronomia</label><span>Pato no tucupi, tacacá, açaí</span></div>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Ver-o-Peso</span><span class="tag">Círio de Nazaré</span>
+            <span class="tag">Estação das Docas</span><span class="tag">Basílica de Nazaré</span>
+            <span class="tag">COP30</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-book-open"></i> História</h3>
+        <p>Belém foi fundada pelos portugueses em 1616, com o nome de "Feliz Lusitânia", como ponto estratégico para defender o estuário do Amazonas das invasões holandesas, inglesas e francesas. A cidade cresceu em torno do Forte do Castelo, que ainda existe. Como Manaus, viveu seu apogeu durante o ciclo da borracha (1870–1910), quando foi construída a Basílica de Nazaré, reformado o Ver-o-Peso e erguidos os palacetes do bairro Nazaré. Belém foi capital de um império extrativista que abastecia o mundo. Com a queda da borracha, a cidade reinventou-se como polo comercial e cultural do Norte. Hoje é reconhecida pela gastronomia — o chef Paulo Martins e outros tornaram a culinária amazônica famosa no mundo.</p>
+      </div>
+
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-compass"></i> O que fazer em Belém</h3>
+        <div class="activities-grid" style="margin-top:0">
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🛒</div><span class="activity-badge">Cultura</span></div>
+            <div class="activity-body"><h4>Mercado Ver-o-Peso</h4>
+              <p>O mais famoso mercado da Amazônia, em atividade desde 1688. Peixes do estuário, açaí, jambu, ervas do "Ver-o-Peso das Ervas", artesanato e a mais autêntica experiência amazônica na cidade.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Orla de Belém</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🕯️</div><span class="activity-badge">Cultura</span></div>
+            <div class="activity-body"><h4>Círio de Nazaré</h4>
+              <p>No segundo domingo de outubro, Belém para. Dois milhões de pessoas nas ruas, a procissão mais emocionante do Brasil — a berlinda da Nossa Senhora de Nazaré é puxada por uma corda de 400 metros carregada por devotos.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Centro / Nazaré</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🚢</div><span class="activity-badge">Cultura</span></div>
+            <div class="activity-body"><h4>Estação das Docas</h4>
+              <p>Galpões históricos do porto de Belém transformados em complexo gastronômico e cultural com vista para a Baía do Guajará. Restaurantes, bares, teatro e exposições às margens do estuário do Amazonas.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Porto</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🦋</div><span class="activity-badge">Natureza</span></div>
+            <div class="activity-body"><h4>Bosque Rodrigues Alves</h4>
+              <p>Um fragmento de floresta amazônica no coração de Belém, com macacos, pássaros e plantas nativas. É o jardim botânico mais antigo do Brasil (1861), com espécies raras da Amazônia.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Marco</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🏛️</div><span class="activity-badge">Cultura</span></div>
+            <div class="activity-body"><h4>Museu do Estado do Pará & Casarões Históricos</h4>
+              <p>O Palacete Lauro Sodré e outros palacetes do século XIX guardam a história da borracha e da colonização portuguesa. Arquitectura eclética europeia tropical — única na Amazônia.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Centro</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🍲</div><span class="activity-badge">Gastronomia</span></div>
+            <div class="activity-body"><h4>Pato no Tucupi & Tacacá</h4>
+              <p>A gastronomia belenense é considerada uma das mais originais do Brasil. O pato no tucupi com jambu, o tacacá nas cuias vendidas nas esquinas e o açaí do jeito paraense são experiências obrigatórias.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Toda a cidade</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-chart-line"></i> Economia & Cultura</h3>
+        <div class="economy-cards">
+          <div class="economy-card"><div class="economy-icon">🎭</div><h4>Capital Cultural da Amazônia</h4><p>Belém tem o maior parque teatral e cultural da Amazônia: Teatro da Paz (1878), Theatro Experimental Waldemar Henrique, Centur e dezenas de festivais. A COP30 em 2025 colocou a cidade no mapa global.</p></div>
+          <div class="economy-card"><div class="economy-icon">🫐</div><h4>Açaí — Do Rio para o Mundo</h4><p>O Pará é o maior produtor de açaí do mundo. O fruto, base da alimentação ribeirinha há séculos, hoje é exportado congelado para dezenas de países. A economia do açaí gera bilhões de reais por ano no estado.</p></div>
+          <div class="economy-card"><div class="economy-icon">⚙️</div><h4>Carajás & Mineração</h4><p>A Serra dos Carajás, no sul do Pará, tem uma das maiores jazidas de minério de ferro do mundo. A Vale S.A. opera ali desde os anos 1980, com estrada de ferro até o porto de São Luís. O PIB mineral do Pará é um dos maiores do Brasil.</p></div>
+        </div>
+      </div>
+
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-utensils"></i> Onde Comer em Belém</h3>
+        <div class="food-list">
+          <div class="food-item">
+            <div class="food-item-img" style="background:#2A5C3F;display:flex;align-items:center;justify-content:center;font-size:1.8rem">🍽️</div>
+            <div class="food-item-body"><h5>Lá em Casa — Chef Paulo Martins</h5>
+              <p>O restaurante que colocou a culinária paraense no mapa nacional. Pato no tucupi com jambu, caldeirada de filhote e sobremesas com frutas amazônicas raras.</p>
+              <span class="food-cuisine">Alta Gastronomia Amazônica</span></div>
+          </div>
+          <div class="food-item">
+            <div class="food-item-img" style="background:#1A4D2E;display:flex;align-items:center;justify-content:center;font-size:1.8rem">🥤</div>
+            <div class="food-item-body"><h5>Tacacazeiras do Ver-o-Peso</h5>
+              <p>O tacacá é servido quente, em cuias de cabaça, com tucupi (caldo amarelo de mandioca), goma, camarão seco e jambu. As tacacazeiras trabalham a partir das 16h — uma tradição belenense.</p>
+              <span class="food-cuisine">Culinária de Rua</span></div>
+          </div>
+          <div class="food-item">
+            <div class="food-item-img" style="background:#0D3B2A;display:flex;align-items:center;justify-content:center;font-size:1.8rem">🦀</div>
+            <div class="food-item-body"><h5>Estação das Docas — Restaurantes</h5>
+              <p>O complexo gastronômico da Estação das Docas reúne restaurantes de culinária paraense, frutos do mar do estuário e bares com vista para a baía. Ideal para o pôr do sol amazônico.</p>
+              <span class="food-cuisine">Variada</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-bed"></i> Onde Ficar em Belém</h3>
+        <div class="accom-grid">
+          <div class="accom-card">
+            <div class="accom-img" style="background:#2A5C3F;display:flex;align-items:center;justify-content:center;font-size:3rem">🏨</div>
+            <div class="accom-type-badge">Hotel 5★</div>
+            <div class="accom-body"><h4>Hilton Belém</h4>
+              <p class="accom-location"><i class="fas fa-map-marker-alt"></i> Praça da República</p>
+              <div class="accom-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="accom-price"><div class="accom-price-value">A partir de <strong>R$ 350</strong>/noite</div><a href="#" class="accom-cta">Ver mais <i class="fas fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+          <div class="accom-card">
+            <div class="accom-img" style="background:#1A4D2E;display:flex;align-items:center;justify-content:center;font-size:3rem">🏨</div>
+            <div class="accom-type-badge">Hotel 4★</div>
+            <div class="accom-body"><h4>Radisson Belém</h4>
+              <p class="accom-location"><i class="fas fa-map-marker-alt"></i> Nazaré</p>
+              <div class="accom-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="accom-price"><div class="accom-price-value">A partir de <strong>R$ 220</strong>/noite</div><a href="#" class="accom-cta">Ver mais <i class="fas fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+          <div class="accom-card">
+            <div class="accom-img" style="background:#0D4A1F;display:flex;align-items:center;justify-content:center;font-size:3rem">🛏️</div>
+            <div class="accom-type-badge">Albergue</div>
+            <div class="accom-body"><h4>Casa do Tucupi Hostel</h4>
+              <p class="accom-location"><i class="fas fa-map-marker-alt"></i> Cidade Velha</p>
+              <div class="accom-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="accom-price"><div class="accom-price-value">A partir de <strong>R$ 55</strong>/noite</div><a href="#" class="accom-cta">Ver mais <i class="fas fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /belem -->
+
+  <!-- MARAJÓ -->
+  <div class="muni-panel" id="marajo">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">🐃</div></div>
+        <div>
+          <span class="section-eyebrow">A Maior Ilha do Mundo</span>
+          <h2 class="section-title">Ilha de Marajó</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            A maior ilha fluviomarinha do mundo, do tamanho da Suíça, no estuário do Rio Amazonas. Búfalos criados soltos nas ruas, praias de rio de areia branca, cerâmica marajoara milenar e a culinária única baseada no leite de búfala. Marajó é um destino de outro mundo.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>Área</label><span>49.606 km² (tamanho da Suíça)</span></div>
+            <div class="muni-info-item"><label>Acesso</label><span>Ferry 3h ou avião 40min</span></div>
+            <div class="muni-info-item"><label>Principal cidade</label><span>Soure</span></div>
+            <div class="muni-info-item"><label>Animais</label><span>400.000 búfalos + aves raras</span></div>
+          </div>
+          <div class="tag-list"><span class="tag">Búfalos</span><span class="tag">Cerâmica Marajoara</span><span class="tag">Praias de Rio</span><span class="tag">Observação de Aves</span></div>
+        </div>
+      </div>
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-compass"></i> O que fazer em Marajó</h3>
+        <div class="activities-grid" style="margin-top:0">
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🐃</div><span class="activity-badge">Natureza</span></div>
+            <div class="activity-body"><h4>Safari de Búfalos</h4>
+              <p>Os búfalos de Marajó são soltos nas ruas e nos campos. Fazendas oferecem passeios a cavalo e de búfalo pelos campos inundados, com avistamento de garças, capivaras e jacarés.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Soure / Salvaterra</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🏖️</div><span class="activity-badge">Natureza</span></div>
+            <div class="activity-body"><h4>Praia do Pesqueiro & Praia de Joanes</h4>
+              <p>Praias de areia branca banhadas pelo encontro do rio Amazonas com o Oceano Atlântico. Água morna, ondas suaves e um horizonte que parece o do mar — mas é rio. As mais belas praias de água doce do Brasil.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Soure</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🏺</div><span class="activity-badge">Cultura</span></div>
+            <div class="activity-body"><h4>Cerâmica Marajoara</h4>
+              <p>A cultura Marajoara (400–1300 d.C.) produziu cerâmicas sofisticadíssimas, com designs geométricos únicos. Museus em Cachoeira do Arari e os artesãos locais ainda reproduzem as técnicas milenares.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Cachoeira do Arari</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-chart-line"></i> Economia Local</h3>
+        <div class="economy-cards">
+          <div class="economy-card"><div class="economy-icon">🐃</div><h4>Pecuária Bubalina</h4><p>Marajó tem mais de 400 mil búfalos — mais búfalos do que gente. O leite de búfala produz queijos e cremes únicos, base da culinária local. As fazendas exportam para o Brasil e o mundo.</p></div>
+          <div class="economy-card"><div class="economy-icon">🐟</div><h4>Pesca & Açaí</h4><p>A pesca artesanal de camarão, caranguejo e peixes do estuário é a base da economia das comunidades ribeirinhas. A produção de açaí nas margens dos rios completa a renda das famílias.</p></div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /marajo -->
+
+  <!-- SANTARÉM -->
+  <div class="muni-panel" id="santarem">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">🌊</div></div>
+        <div>
+          <span class="section-eyebrow">Pérola do Tapajós</span>
+          <h2 class="section-title">Santarém</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            Santarém fica na confluência dos rios Tapajós e Amazonas — um encontro de águas azuis com marrons. É ponto de partida para Alter do Chão (a "Caribe Amazônica") e para a Floresta Nacional do Tapajós, com 600.000 hectares de floresta primária e comunidades ribeirinhas preservadas.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>População</label><span>~320.000</span></div>
+            <div class="muni-info-item"><label>Acesso</label><span>Avião 1h30 de Belém</span></div>
+            <div class="muni-info-item"><label>Destaque</label><span>Alter do Chão</span></div>
+            <div class="muni-info-item"><label>Melhor época</label><span>Set–Dez (praia)</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-compass"></i> O que fazer</h3>
+        <div class="activities-grid" style="margin-top:0">
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🏖️</div><span class="activity-badge">Natureza</span></div>
+            <div class="activity-body"><h4>Alter do Chão — "Caribe da Amazônia"</h4>
+              <p>A praia mais famosa do Pará. Águas cristalinas cor de piscina, areia branca, ilhas fluviais que surgem na seca e uma vila charmosa com restaurantes e artesanato.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> 35 km de Santarém</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🌿</div><span class="activity-badge">Natureza</span></div>
+            <div class="activity-body"><h4>Floresta Nacional do Tapajós</h4>
+              <p>600.000 hectares de floresta primária com sauvaíras monumentais de mais de 40m, trilhas guiadas, comunidades ribeirinhas e uma das melhores experiências de ecoturismo comunitário da Amazônia.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Rio Tapajós</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SALINÓPOLIS -->
+  <div class="muni-panel" id="salinopolis">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">🏄</div></div>
+        <div>
+          <span class="section-eyebrow">Litoral do Pará</span>
+          <h2 class="section-title">Salinópolis</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            Salinópolis é o principal balneário do litoral paraense, a 222 km de Belém. A praia do Atalaia, com 14 km de extensão, recebe marés que chegam a 5 metros de diferença — um fenômeno que cria um espetáculo diário de praia "nascendo" e "sumindo". A pororoca, a famosa onda de maré inversa, ocorre na região no período das marés equinociais.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>Distância</label><span>222 km de Belém</span></div>
+            <div class="muni-info-item"><label>Praia</label><span>Atalaia — 14 km</span></div>
+            <div class="muni-info-item"><label>Fenômeno</label><span>Pororoca (marés equinociais)</span></div>
+            <div class="muni-info-item"><label>Maré</label><span>Até 5m de diferença</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAPITÃO POÇO -->
+  <div class="muni-panel" id="capitao-poco">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">🍊</div></div>
+        <div>
+          <span class="section-eyebrow">Capital da Laranja Brasileira</span>
+          <h2 class="section-title">Capitão Poço</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            Capitão Poço é o maior produtor de laranjas do Brasil — e isso não é metáfora. O município, localizado no nordeste paraense, produz mais de um quinto de toda a laranja consumida no país. A economia local gira inteiramente em torno dos pomares de laranja, e a Festa da Laranja, em julho, é o evento mais importante do calendário regional.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>Produção</label><span>Maior produtor de laranja do Brasil</span></div>
+            <div class="muni-info-item"><label>Festa</label><span>Julho · Festa da Laranja</span></div>
+            <div class="muni-info-item"><label>Distância</label><span>261 km de Belém</span></div>
+            <div class="muni-info-item"><label>Outras culturas</label><span>Cupuaçu, maracujá, dendê</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-chart-line"></i> Economia — A Laranja de Capitão Poço</h3>
+        <div class="economy-cards">
+          <div class="economy-card"><div class="economy-icon">🍊</div><h4>Maior Produtor Nacional</h4><p>Capitão Poço produz mais de 700 mil toneladas de laranja por ano, abastecendo o mercado nacional e exportando para países vizinhos. O município é chamado de "Capital da Laranja" — um título ganho pela produção extraordinária das famílias rurais da região.</p></div>
+          <div class="economy-card"><div class="economy-icon">🎉</div><h4>Festa da Laranja — Julho</h4><p>A festa anual reúne produtores, consumidores e turistas num evento de 5 dias com feira agrícola, shows, desfiles e uma chuva de laranjas — literalmente. É um dos festivais rurais mais charmosos do Norte do Brasil.</p></div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /capitao-poco -->
+
+  <!-- ALTAMIRA -->
+  <div class="muni-panel" id="altamira">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">⚡</div></div>
+        <div>
+          <span class="section-eyebrow">Portal da Transamazônica</span>
+          <h2 class="section-title">Altamira</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            O maior município do Brasil em área — 159.533 km² (maior que muitos países europeus), Altamira é o centro da BR-230, a famosa Transamazônica. Sede da Usina de Belo Monte (3ª maior do mundo), ponto de partida para a Terra do Meio, o Parque do Xingu e os territórios indígenas Kayapó e Yanomami.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>Área</label><span>159.533 km² (maior município BR)</span></div>
+            <div class="muni-info-item"><label>Destaques</label><span>Belo Monte, Terra do Meio</span></div>
+            <div class="muni-info-item"><label>Povos</label><span>Kayapó, Arara, Juruna</span></div>
+            <div class="muni-info-item"><label>Acesso</label><span>Avião ou Transamazônica</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MARABÁ -->
+  <div class="muni-panel" id="maraba">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">⛏️</div></div>
+        <div>
+          <span class="section-eyebrow">Sul do Pará</span>
+          <h2 class="section-title">Marabá</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            Maior cidade do interior do Pará, Marabá está no coração da bacia do Rio Tocantins e na confluência dos rios Itacaiúnas e Tocantins. É ponto estratégico do corredor de exportação mineral do Pará, próxima à Serra dos Carajás. Foi palco da Guerrilha do Araguaia nos anos 1970 e hoje é centro agropecuário e minerador do Sul do Pará.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>População</label><span>~270.000</span></div>
+            <div class="muni-info-item"><label>Rio</label><span>Tocantins</span></div>
+            <div class="muni-info-item"><label>Mineração</label><span>Carajás (ferro, ouro)</span></div>
+            <div class="muni-info-item"><label>Acesso</label><span>Avião, PA-150</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIS PA -->
+  <div class="muni-panel" id="mais-pa">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:40px">
+        <span class="section-eyebrow">Pará</span>
+        <h2 class="section-title">Outros municípios em destaque</h2>
+        <p class="section-subtitle">O Pará tem 144 municípios, cada um com sua identidade única.</p>
+      </div>
+      <div class="estados-lista-grid">
+        <div class="estado-lista-card"><h4>Breves</h4><p>Capital do Marajó, porta de entrada pela via fluvial para as praias e fazendas da ilha.</p><div class="tag-list"><span class="tag">Marajó</span><span class="tag">Fluvial</span></div></div>
+        <div class="estado-lista-card"><h4>Castanhal</h4><p>Polo comercial do nordeste do Pará, conhecida pela produção de mandioca e pelos vinhos de açaí artesanais.</p><div class="tag-list"><span class="tag">Mandioca</span><span class="tag">Açaí</span></div></div>
+        <div class="estado-lista-card"><h4>Bragança</h4><p>Litoral do Pará, com praias de oceano, Festa de São Benedito e culinária pesqueira única — camarão regional e caranguejo fresco.</p><div class="tag-list"><span class="tag">Litoral</span><span class="tag">Camarão</span></div></div>
+        <div class="estado-lista-card"><h4>Paragominas</h4><p>Chamada de "Cidade Verde" por ter revertido o desmatamento com manejo florestal sustentável. Modelo de desenvolvimento amazônico.</p><div class="tag-list"><span class="tag">Sustentabilidade</span><span class="tag">Madeira Legal</span></div></div>
+        <div class="estado-lista-card"><h4>Tucuruí</h4><p>Sede da Hidrelétrica de Tucuruí, que criou o maior lago artificial do Brasil. Pesca esportiva e turismo de natureza no lago.</p><div class="tag-list"><span class="tag">Lago de Tucuruí</span><span class="tag">Pesca</span></div></div>
+        <div class="estado-lista-card"><h4>Redenção</h4><p>Primeira cidade do Brasil a abolir a escravidão (1883), 5 anos antes da Lei Áurea. Centro histórico com memória afro-brasileira.</p><div class="tag-list"><span class="tag">Abolição</span><span class="tag">Afro-Brasileira</span></div></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /muniContent -->
+
+<div style="background:var(--green-ultra);padding:48px 0;text-align:center">
+  <div class="container">
+    <h3 style="font-family:var(--font-display);font-size:1.6rem;color:var(--green-darkest);margin-bottom:12px">Explore todos os estados</h3>
+    <p style="color:var(--text-medium);margin-bottom:24px">A Amazônia Legal tem muito mais para oferecer. Descubra os outros 6 estados.</p>
+    <a href="../index.html#estados" class="btn btn-green"><i class="fas fa-map"></i> Ver todos os estados</a>
+  </div>
+</div>
+
+
+<!-- TODOS OS MUNICÍPIOS -->
+<section class="todos-municipios">
+  <div class="container">
+    <div class="section-header text-center" style="margin-bottom:40px">
+      <span class="section-eyebrow">Pará</span>
+      <h2 class="section-title">Conheça todos os municípios</h2>
+      <p class="section-subtitle">Pará tem <strong>144 municípios</strong>. Explore cada canto desse território único.</p>
+    </div>
+    <div class="muni-all-grid fade-up">
+        <a href="../municipios/municipio.html?slug=para-altamira" class="muni-mini-card">
+          <h4>Altamira</h4>
+          <p>Maior município do mundo em área, às margens do Rio Xingu; ponto de partida para terras Kayapó.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Rio Xingu</span><span class="muni-mini-tag">Kayapó</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-maraba" class="muni-mini-card">
+          <h4>Marabá</h4>
+          <p>Capital do sudeste do Pará, porta para a Serra dos Carajás, mineração e castanha-do-pará.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Carajás</span><span class="muni-mini-tag">Castanha</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-parauapebas" class="muni-mini-card">
+          <h4>Parauapebas</h4>
+          <p>Mina de Carajás — maior reserva de minério de ferro do planeta, Floresta Nacional de Carajás.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Carajás</span><span class="muni-mini-tag">Mineração</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-tucurui" class="muni-mini-card">
+          <h4>Tucuruí</h4>
+          <p>Maior hidrelétrica totalmente brasileira, com lago artificial de 2.430 km² e pesca esportiva.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Hidrelétrica</span><span class="muni-mini-tag">Lago</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-paragominas" class="muni-mini-card">
+          <h4>Paragominas</h4>
+          <p>Modelo nacional de desenvolvimento sustentável: saiu do desmatamento à certificação verde.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Verde</span><span class="muni-mini-tag">Agrofloresta</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-castanhal" class="muni-mini-card">
+          <h4>Castanhal</h4>
+          <p>Polo regional do Nordeste Paraense, gastronomia, comércio e acesso às praias do Salgado.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Comércio</span><span class="muni-mini-tag">Nordeste PA</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-abaetetuba" class="muni-mini-card">
+          <h4>Abaetetuba</h4>
+          <p>Capital do açaí — mais de 80.000 palmeiras cultivadas, exportação para o mundo inteiro.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Açaí</span><span class="muni-mini-tag">Rio Tocantins</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-cameta" class="muni-mini-card">
+          <h4>Cametá</h4>
+          <p>Cidade histórica do Baixo Tocantins, casas coloniais e o Festival das Ilhas.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Colonial</span><span class="muni-mini-tag">Festival</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-obidos" class="muni-mini-card">
+          <h4>Óbidos</h4>
+          <p>Às margens do Rio Amazonas, com a Fortaleza Pauxis — um dos poucos fortes militares da Amazônia.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Forte Militar</span><span class="muni-mini-tag">Rio Amazonas</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-oriximina" class="muni-mini-card">
+          <h4>Oriximiná</h4>
+          <p>Terras Quilombolas do Trombetas e mineração de bauxita em Rio Trombetas.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Quilombola</span><span class="muni-mini-tag">Rio Trombetas</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-breves" class="muni-mini-card">
+          <h4>Breves</h4>
+          <p>Capital do arquipélago do Marajó no lado paraense, porta dos furos do Marajó.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Ilha de Marajó</span><span class="muni-mini-tag">Furos</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-soure" class="muni-mini-card">
+          <h4>Soure</h4>
+          <p>Principal cidade da Ilha de Marajó, búfalos nas ruas, praias de água doce e queijo artesanal.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Búfalos</span><span class="muni-mini-tag">Praias</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-monte-alegre" class="muni-mini-card">
+          <h4>Monte Alegre</h4>
+          <p>Pinturas rupestres de 11.000 anos — possivelmente as mais antigas das Américas.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Rupestre</span><span class="muni-mini-tag">Arqueologia</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-belterra" class="muni-mini-card">
+          <h4>Belterra</h4>
+          <p>Fordlândia de Henry Ford e Flona do Tapajós — encontro da História com a floresta viva.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Fordlândia</span><span class="muni-mini-tag">Tapajós</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-itaituba" class="muni-mini-card">
+          <h4>Itaituba</h4>
+          <p>Capital do ouro do Tapajós e portal da Transamazônica, comunidades garimpeiras históricas.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Garimpo</span><span class="muni-mini-tag">Tapajós</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-sao-felix-do-xingu" class="muni-mini-card">
+          <h4>São Félix do Xingu</h4>
+          <p>Maior extensão territorial do Pará, terras Kayapó, pesca de dourado e curimba.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Kayapó</span><span class="muni-mini-tag">Xingu</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-redencao" class="muni-mini-card">
+          <h4>Redenção</h4>
+          <p>Primeira cidade do Brasil a abolir a escravidão (1883), patrimônio do abolicionismo nacional.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Abolicionismo</span><span class="muni-mini-tag">História</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-novo-progresso" class="muni-mini-card">
+          <h4>Novo Progresso</h4>
+          <p>Portal da Floresta Nacional do Jamanxim e do Parque do Cachimbo, fronteira do desmatamento zero.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Jamanxim</span><span class="muni-mini-tag">Fronteira</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-jacareacanga" class="muni-mini-card">
+          <h4>Jacareacanga</h4>
+          <p>Rio Tapajós e terras indígenas Sawré Muybu — pesca e cultura Munduruku.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Munduruku</span><span class="muni-mini-tag">Tapajós</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-almeirim" class="muni-mini-card">
+          <h4>Almeirim</h4>
+          <p>Monte Dourado e o Projeto Jari — floresta plantada e indústria de celulose.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Jari</span><span class="muni-mini-tag">Celulose</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-vigia-de-nazare" class="muni-mini-card">
+          <h4>Vigia de Nazaré</h4>
+          <p>Cidade pesqueira no estuário amazônico, réplica do Círio de Nazaré.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Pesca</span><span class="muni-mini-tag">Círio</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-braganca" class="muni-mini-card">
+          <h4>Bragança</h4>
+          <p>Costa Atlântica do Pará, Ajuruteua — maior manguezal do mundo e praias de areia fina.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Manguezal</span><span class="muni-mini-tag">Praia</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-barcarena" class="muni-mini-card">
+          <h4>Barcarena</h4>
+          <p>Polo industrial com porto de escoamento de bauxita e alumínio.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Porto</span><span class="muni-mini-tag">Indústria</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+        <a href="../municipios/municipio.html?slug=para-tome-acu" class="muni-mini-card">
+          <h4>Tomé-Açu</h4>
+          <p>Agroflorestas japonesas — comunidade Nikkei que revolucionou o uso da terra amazônica.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Agrofloresta</span><span class="muni-mini-tag">Nikkei</span>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text"><span class="logo-main">Mundo Amazônia</span><span class="logo-sub" style="color:rgba(255,255,255,.4)">Guia Turístico</span></div>
+        <p>O maior guia turístico da Amazônia Legal.</p>
+        <div class="footer-social"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div>
+      </div>
+      <div class="footer-col"><h4>Estados</h4>
+        <a href="amazonas.html">Amazonas</a><a href="para.html">Pará</a><a href="acre.html">Acre</a>
+        <a href="amapa.html">Amapá</a><a href="rondonia.html">Rondônia</a><a href="roraima.html">Roraima</a><a href="tocantins.html">Tocantins</a>
+      </div>
+      <div class="footer-col"><h4>Explore</h4>
+        <a href="../index.html#atividades">O que fazer</a><a href="../index.html#gastronomia">Onde comer</a>
+        <a href="../index.html#hospedagem">Onde ficar</a><a href="../index.html#festivais">Festivais</a>
+      </div>
+      <div class="footer-col"><h4>Pará</h4>
+        <a href="#belem" onclick="document.querySelector('[data-panel=belem]')?.click()">Belém</a>
+        <a href="#marajo" onclick="document.querySelector('[data-panel=marajo]')?.click()">Ilha de Marajó</a>
+        <a href="#santarem" onclick="document.querySelector('[data-panel=santarem]')?.click()">Santarém</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Mundo Amazônia. Todos os direitos reservados.</span><span>Feito com ♥ para a Amazônia</span></div>
+  </div>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

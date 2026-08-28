@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubra os 7 estados da Amazônia Legal: Amazonas, Pará, Acre, Amapá, Rondônia, Roraima e Tocantins. Guia turístico completo com municípios, hospedagens, gastronomia e mais.">
+  <meta property="og:title" content="Mundo Amazônia - Guia Turístico da Amazônia Legal">
+  <meta property="og:description" content="O maior bioma do planeta na palma da sua mão.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <title>Mundo Amazônia - Guia Turístico da Amazônia Legal</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     TOP BAR
+══════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-bar-left">
+      <span data-i18n="topbar.tagline">O maior bioma do planeta te espera</span>
+    </div>
+    <div class="top-bar-right">
+      <div class="top-bar-social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <!-- Seletor de idioma -->
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="pt">PT</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HEADER / NAVEGAÇÃO
+══════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo-link">
+      <img src="images/logo-mundoamazonia.svg" alt="Mundo Amazônia" class="logo-img">
+    </a>
+
+    <!-- Navegação Desktop -->
+    <nav aria-label="Navegação principal">
+      <ul class="nav-main">
+
+        <!-- Estados -->
+        <li class="nav-item">
+          <a href="#estados" class="nav-link">
+            <span data-i18n="nav.states">Os Estados</span>
+            <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-mega">
+            <div class="mega-header" data-i18n="nav.estados.title">Amazônia Legal — 7 Estados</div>
+            <div class="mega-grid">
+              <a href="estados/amazonas.html" class="mega-state-item">
+                <div class="mega-state-flag">AM</div>
+                <div class="mega-state-info">
+                  <strong data-i18n="state.am.name">Amazonas</strong>
+                  <span data-i18n="state.am.capital">Manaus</span>
+                </div>
+              </a>
+              <a href="estados/para.html" class="mega-state-item">
+                <div class="mega-state-flag">PA</div>
+                <div class="mega-state-info">
+                  <strong data-i18n="state.pa.name">Pará</strong>
+                  <span data-i18n="state.pa.capital">Belém</span>
+                </div>
+              </a>
+              <a href="estados/acre.html" class="mega-state-item">
+                <div class="mega-state-flag">AC</div>
+                <div class="mega-state-info">
+                  <strong data-i18n="state.ac.name">Acre</strong>
+                  <span data-i18n="state.ac.capital">Rio Branco</span>
+                </div>
+              </a>
+              <a href="estados/amapa.html" class="mega-state-item">
+                <div class="mega-state-flag">AP</div>
+                <div class="mega-state-info">
+                  <strong data-i18n="state.ap.name">Amapá</strong>
+                  <span data-i18n="state.ap.capital">Macapá</span>
+                </div>
+              </a>
+              <a href="estados/rondonia.html" class="mega-state-item">
+                <div class="mega-state-flag">RO</div>
+                <div class="mega-state-info">
+                  <strong data-i18n="state.ro.name">Rondônia</strong>
+                  <span data-i18n="state.ro.capital">Porto Velho</span>
+                </div>
+              </a>
+              <a href="estados/roraima.html" class="mega-state-item">
+                <div class="mega-state-flag">RR</div>
+                <div class="mega-state-info">
+                  <strong data-i18n="state.rr.name">Roraima</strong>
+                  <span data-i18n="state.rr.capital">Boa Vista</span>
+                </div>
+              </a>
+              <a href="estados/tocantins.html" class="mega-state-item">
+                <div class="mega-state-flag">TO</div>
+                <div class="mega-state-info">
+                  <strong data-i18n="state.to.name">Tocantins</strong>
+                  <span data-i18n="state.to.capital">Palmas</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- O que fazer -->
+        <li class="nav-item">
+          <a href="atividades.html" class="nav-link">
+            <span data-i18n="nav.todo">O que fazer</span>
+          </a>
+        </li>
+
+        <!-- Onde Comer -->
+        <li class="nav-item">
+          <a href="gastronomia.html" class="nav-link">
+            <span data-i18n="nav.eat">Onde Comer</span>
+          </a>
+        </li>
+
+        <!-- Onde Ficar -->
+        <li class="nav-item">
+          <a href="hospedagem.html" class="nav-link">
+            <span data-i18n="nav.stay">Onde Ficar</span>
+          </a>
+        </li>
+
+        <!-- Festivais -->
+        <li class="nav-item">
+          <a href="festivais.html" class="nav-link">
+            <span data-i18n="nav.festivals">Festivais</span>
+          </a>
+        </li>
+
+        <!-- Galeria -->
+        <li class="nav-item">
+          <a href="galeria.html" class="nav-link">
+            <span data-i18n="nav.gallery">Galeria</span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- Ações -->
+    <div class="header-actions">
+      <button class="search-btn" id="searchBtn" aria-label="Buscar">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+<!-- Search Overlay -->
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+  <div class="search-box">
+    <h3>🌿 Buscar na Amazônia</h3>
+    <div class="search-input-row">
+      <input type="text" data-i18n-ph="nav.search.placeholder" placeholder="Buscar destinos, municípios, atrações...">
+      <button class="btn-search-go" data-i18n="nav.search.btn">Buscar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Mobile -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <div class="logo-text">
+      <span class="logo-main" style="color:white">Mundo Amazônia</span>
+    </div>
+    <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
+  </div>
+
+  <a class="mobile-nav-link" data-toggle="mobileStates" href="javascript:void(0)">
+    <span data-i18n="nav.states">Os Estados</span> <i class="fas fa-chevron-right"></i>
+  </a>
+  <div id="mobileStates" class="mobile-sub-menu" style="display:none">
+    <a class="mobile-sub-link" href="estados/amazonas.html">Amazonas</a>
+    <a class="mobile-sub-link" href="estados/para.html">Pará</a>
+    <a class="mobile-sub-link" href="estados/acre.html">Acre</a>
+    <a class="mobile-sub-link" href="estados/amapa.html">Amapá</a>
+    <a class="mobile-sub-link" href="estados/rondonia.html">Rondônia</a>
+    <a class="mobile-sub-link" href="estados/roraima.html">Roraima</a>
+    <a class="mobile-sub-link" href="estados/tocantins.html">Tocantins</a>
+  </div>
+
+  <a class="mobile-nav-link" href="atividades.html">
+    <span data-i18n="nav.todo">O que fazer</span> <i class="fas fa-chevron-right"></i>
+  </a>
+  <a class="mobile-nav-link" href="gastronomia.html">
+    <span data-i18n="nav.eat">Onde Comer</span> <i class="fas fa-chevron-right"></i>
+  </a>
+  <a class="mobile-nav-link" href="hospedagem.html">
+    <span data-i18n="nav.stay">Onde Ficar</span> <i class="fas fa-chevron-right"></i>
+  </a>
+  <a class="mobile-nav-link" href="festivais.html">
+    <span data-i18n="nav.festivals">Festivais</span> <i class="fas fa-chevron-right"></i>
+  </a>
+  <a class="mobile-nav-link" href="galeria.html">
+    <span data-i18n="nav.gallery">Galeria</span> <i class="fas fa-chevron-right"></i>
+  </a>
+
+  <div class="mobile-lang-bar">
+    <button class="mobile-lang-btn active" data-lang="pt">PT</button>
+    <button class="mobile-lang-btn" data-lang="en">EN</button>
+    <button class="mobile-lang-btn" data-lang="es">ES</button>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero" id="inicio">
+  <div class="hero-slides">
+    <!-- Adicione suas imagens em images/hero-1.jpg, hero-2.jpg, etc. -->
+    <!-- As cores de fundo servem como fallback enquanto as imagens não são adicionadas -->
+    <div class="hero-slide active"></div>
+    <div class="hero-slide"></div>
+    <div class="hero-slide"></div>
+    <div class="hero-slide"></div>
+  </div>
+
+  <div class="hero-content container">
+    <div class="hero-tag">
+      <i class="fas fa-leaf"></i>
+      <span data-i18n="hero.tag">Amazônia Legal — 7 estados</span>
+    </div>
+    <h1 class="hero-title" data-i18n="hero.title">
+      A Amazônia<br>o <span>ano inteiro</span>
+    </h1>
+    <p class="hero-subtitle" data-i18n="hero.sub">
+      De Manaus a Palmas, do Rio Negro ao Araguaia — natureza, cultura e gente que só existem aqui.
+    </p>
+    <div class="hero-actions">
+      <a href="#estados" class="btn btn-primary">
+        <i class="fas fa-compass"></i>
+        <span data-i18n="hero.cta1">Explorar destinos</span>
+      </a>
+      <a href="#estados" class="btn btn-outline-white">
+        <i class="fas fa-map"></i>
+        <span data-i18n="hero.cta2">Conheça os estados</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Indicadores -->
+  <div class="hero-indicators">
+    <div class="hero-dot active"></div>
+    <div class="hero-dot"></div>
+    <div class="hero-dot"></div>
+    <div class="hero-dot"></div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="hero-scroll">
+    <span data-i18n="hero.scroll">Role para descobrir</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     QUICK NAV — estilo riotur
+══════════════════════════════════════════ -->
+<nav class="quick-nav" aria-label="Navegação rápida">
+  <div class="container">
+    <div class="quick-nav-inner">
+      <a href="atividades.html" class="qn-item">
+        <i class="fas fa-leaf"></i>
+        <span data-i18n="nav.todo">O que fazer</span>
+      </a>
+      <a href="gastronomia.html" class="qn-item">
+        <i class="fas fa-utensils"></i>
+        <span data-i18n="nav.eat">Onde comer</span>
+      </a>
+      <a href="hospedagem.html" class="qn-item">
+        <i class="fas fa-bed"></i>
+        <span data-i18n="nav.stay">Onde ficar</span>
+      </a>
+      <a href="#estados" class="qn-item">
+        <i class="fas fa-map-marked-alt"></i>
+        <span data-i18n="nav.states">Os estados</span>
+      </a>
+      <a href="festivais.html" class="qn-item">
+        <i class="fas fa-music"></i>
+        <span data-i18n="nav.festivals">Festivais</span>
+      </a>
+      <a href="galeria.html" class="qn-item">
+        <i class="fas fa-images"></i>
+        <span data-i18n="nav.gallery">Galeria</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════
+     BUSCA RÁPIDA
+══════════════════════════════════════════ -->
+<div class="quick-search">
+  <div class="container">
+    <form class="quick-search-inner" id="quickSearchForm">
+      <div class="qs-field">
+        <label data-i18n="qs.state.label">Estado</label>
+        <select id="qsState">
+          <option value="" data-i18n="qs.state.all">Todos os estados</option>
+          <option value="am">Amazonas</option>
+          <option value="pa">Pará</option>
+          <option value="ac">Acre</option>
+          <option value="ap">Amapá</option>
+          <option value="ro">Rondônia</option>
+          <option value="rr">Roraima</option>
+          <option value="to">Tocantins</option>
+        </select>
+      </div>
+      <div class="qs-field">
+        <label data-i18n="qs.type.label">O que busca?</label>
+        <select id="qsType">
+          <option value="" data-i18n="qs.type.all">Tudo</option>
+          <option value="natureza" data-i18n="qs.type.nat">Natureza</option>
+          <option value="cultura" data-i18n="qs.type.cult">Cultura</option>
+          <option value="gastronomia" data-i18n="qs.type.food">Gastronomia</option>
+          <option value="hospedagem" data-i18n="qs.type.stay">Hospedagem</option>
+          <option value="festivais" data-i18n="qs.type.fest">Festivais</option>
+        </select>
+      </div>
+      <div class="qs-field">
+        <label data-i18n="qs.dest.label">Destino ou município</label>
+        <input type="text" id="qsDest" data-i18n-ph="qs.dest.ph" placeholder="Ex: Parintins, Marajó, Jalapão...">
+      </div>
+      <button type="submit" class="qs-btn">
+        <i class="fas fa-search"></i>
+        <span data-i18n="qs.btn">Buscar</span>
+      </button>
+    </form>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     ESTADOS
+══════════════════════════════════════════ -->
+<section class="states-section section-pad" id="estados">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-eyebrow" data-i18n="states.eyebrow">Amazônia Legal</span>
+      <h2 class="section-title" data-i18n="states.title">Sete estados, infinitas histórias</h2>
+      <p class="section-subtitle" data-i18n="states.sub">
+        Cada estado é um mundo à parte. Escolha o seu próximo destino e mergulhe nas culturas, paisagens e sabores únicos da maior floresta tropical do planeta.
+      </p>
+    </div>
+
+    <div class="states-grid">
+
+      <!-- Amazonas -->
+      <a href="estados/amazonas.html" class="state-card state-am fade-up">
+        <div class="state-card-bg"></div>
+        <div class="state-card-content">
+          <span class="state-abbr">AM</span>
+          <h3 data-i18n="state.am.name">Amazonas</h3>
+          <p class="state-capital"><i class="fas fa-map-marker-alt"></i> <span data-i18n="state.am.capital">Manaus</span></p>
+          <div class="state-tags">
+            <span class="state-tag">Parintins</span>
+            <span class="state-tag">Encontro das Águas</span>
+            <span class="state-tag">Teatro Amazonas</span>
+            <span class="state-tag">MUSA</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Pará -->
+      <a href="estados/para.html" class="state-card state-pa fade-up">
+        <div class="state-card-bg"></div>
+        <div class="state-card-content">
+          <span class="state-abbr">PA</span>
+          <h3 data-i18n="state.pa.name">Pará</h3>
+          <p class="state-capital"><i class="fas fa-map-marker-alt"></i> <span data-i18n="state.pa.capital">Belém</span></p>
+          <div class="state-tags">
+            <span class="state-tag">Círio de Nazaré</span>
+            <span class="state-tag">Ilha de Marajó</span>
+            <span class="state-tag">Ver-o-Peso</span>
+            <span class="state-tag">Açaí</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Acre -->
+      <a href="estados/acre.html" class="state-card state-ac fade-up">
+        <div class="state-card-bg"></div>
+        <div class="state-card-content">
+          <span class="state-abbr">AC</span>
+          <h3 data-i18n="state.ac.name">Acre</h3>
+          <p class="state-capital"><i class="fas fa-map-marker-alt"></i> <span data-i18n="state.ac.capital">Rio Branco</span></p>
+          <div class="state-tags">
+            <span class="state-tag">Chico Mendes</span>
+            <span class="state-tag">Seringais</span>
+            <span class="state-tag">Rio Juruá</span>
+            <span class="state-tag">Castanha</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Amapá -->
+      <a href="estados/amapa.html" class="state-card state-ap fade-up">
+        <div class="state-card-bg"></div>
+        <div class="state-card-content">
+          <span class="state-abbr">AP</span>
+          <h3 data-i18n="state.ap.name">Amapá</h3>
+          <p class="state-capital"><i class="fas fa-map-marker-alt"></i> <span data-i18n="state.ap.capital">Macapá</span></p>
+          <div class="state-tags">
+            <span class="state-tag">Fortaleza de São José</span>
+            <span class="state-tag">Cabo Orange</span>
+            <span class="state-tag">Festival do Caranguejo</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Rondônia -->
+      <a href="estados/rondonia.html" class="state-card state-ro fade-up">
+        <div class="state-card-bg"></div>
+        <div class="state-card-content">
+          <span class="state-abbr">RO</span>
+          <h3 data-i18n="state.ro.name">Rondônia</h3>
+          <p class="state-capital"><i class="fas fa-map-marker-alt"></i> <span data-i18n="state.ro.capital">Porto Velho</span></p>
+          <div class="state-tags">
+            <span class="state-tag">Cachoeira Samuel</span>
+            <span class="state-tag">Rio Guaporé</span>
+            <span class="state-tag">Café Robusta</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Roraima -->
+      <a href="estados/roraima.html" class="state-card state-rr fade-up">
+        <div class="state-card-bg"></div>
+        <div class="state-card-content">
+          <span class="state-abbr">RR</span>
+          <h3 data-i18n="state.rr.name">Roraima</h3>
+          <p class="state-capital"><i class="fas fa-map-marker-alt"></i> <span data-i18n="state.rr.capital">Boa Vista</span></p>
+          <div class="state-tags">
+            <span class="state-tag">Monte Roraima</span>
+            <span class="state-tag">Tepuis</span>
+            <span class="state-tag">Yanomami</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Tocantins -->
+      <a href="estados/tocantins.html" class="state-card state-to fade-up">
+        <div class="state-card-bg"></div>
+        <div class="state-card-content">
+          <span class="state-abbr">TO</span>
+          <h3 data-i18n="state.to.name">Tocantins</h3>
+          <p class="state-capital"><i class="fas fa-map-marker-alt"></i> <span data-i18n="state.to.capital">Palmas</span></p>
+          <div class="state-tags">
+            <span class="state-tag">Jalapão</span>
+            <span class="state-tag">Araguaia</span>
+            <span class="state-tag">Fervedouros</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     DESTINOS EM DESTAQUE — editorial riotur
+══════════════════════════════════════════ -->
+<section class="editorial-section" id="destinos">
+  <div class="container">
+    <div class="fade-up" style="margin-bottom:32px">
+      <span class="section-eyebrow">Destinos em Destaque</span>
+      <h2 class="section-title">Experiências que ficam<br>para sempre</h2>
+    </div>
+    <div class="editorial-grid fade-up">
+
+      <!-- Card grande — Parintins / Festival -->
+      <a href="estados/amazonas.html" class="editorial-card editorial-card--large">
+        <img src="images/am-cover.jpg" alt="Amazonas" class="editorial-card-img">
+        <div class="editorial-card-body">
+          <span class="editorial-card-cat">Amazonas · Junho</span>
+          <h3 class="editorial-card-title">Festival Folclórico de Parintins</h3>
+          <p class="editorial-card-subtitle">O maior espetáculo folclórico do Brasil reúne 35 mil pessoas em três noites de Boi Bumbá.</p>
+          <span class="editorial-card-link">Explorar <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Card pequeno — Jalapão -->
+      <a href="estados/tocantins.html" class="editorial-card editorial-card--small">
+        <img src="images/to-cover.jpg" alt="Tocantins" class="editorial-card-img">
+        <div class="editorial-card-body">
+          <span class="editorial-card-cat">Tocantins · Ecoturismo</span>
+          <h3 class="editorial-card-title">Jalapão — Fervedouros e Dunas</h3>
+          <span class="editorial-card-link">Descobrir <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Card pequeno — Ver-o-Peso -->
+      <a href="estados/para.html" class="editorial-card editorial-card--small">
+        <img src="images/pa-cover.jpg" alt="Pará" class="editorial-card-img">
+        <div class="editorial-card-body">
+          <span class="editorial-card-cat">Pará · Gastronomia</span>
+          <h3 class="editorial-card-title">Ver-o-Peso & Cozinha Paraense</h3>
+          <span class="editorial-card-link">Conhecer <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     GALERIA DE FOTOS
+══════════════════════════════════════════ -->
+<section class="gallery-section section-pad" id="galeria">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-eyebrow">Galeria</span>
+      <h2 class="section-title" style="color:var(--white)">A Amazônia em imagens</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.65)">
+        Adicione suas fotos a esta galeria através do painel de administração. Cada imagem conta uma história da maior floresta do planeta.
+      </p>
+    </div>
+    <div class="gallery-grid fade-up">
+      <div class="gallery-item">
+        <img src="images/gallery-1.jpg" alt="Amazônia" loading="lazy">
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-2.jpg" alt="Amazônia" loading="lazy">
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-3.jpg" alt="Amazônia" loading="lazy">
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-4.jpg" alt="Amazônia" loading="lazy">
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-5.jpg" alt="Amazônia" loading="lazy">
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-6.jpg" alt="Amazônia" loading="lazy">
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-7.jpg" alt="Amazônia" loading="lazy">
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/hero-4.jpg" alt="Amazônia" loading="lazy">
+        <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+    </div>
+    <p class="gallery-caption fade-up">
+      Quer ver mais? <a href="galeria.html">Acesse a galeria completa <i class="fas fa-arrow-right"></i></a>
+    </p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     BANNER — AMAZÔNIA EM NÚMEROS
+══════════════════════════════════════════ -->
+<section class="map-banner">
+  <div class="container map-banner-content">
+    <span class="map-banner-eyebrow">A Amazônia Legal em números</span>
+    <h2 class="map-banner-title">O maior bioma do planeta<br>na palma da sua mão</h2>
+    <p class="map-banner-sub">Sete estados, mais de 700 municípios, 5,5 milhões de km² de floresta tropical e a maior biodiversidade do planeta — tudo reunido aqui.</p>
+    <a href="#estados" class="btn btn-primary">
+      <i class="fas fa-compass"></i> Planejar minha viagem
+    </a>
+    <div class="map-stats">
+      <div class="map-stat-item">
+        <span class="map-stat-number">7</span>
+        <span class="map-stat-label">Estados</span>
+      </div>
+      <div class="map-stat-item">
+        <span class="map-stat-number">750+</span>
+        <span class="map-stat-label">Municípios</span>
+      </div>
+      <div class="map-stat-item">
+        <span class="map-stat-number">5,5mi</span>
+        <span class="map-stat-label">km² de floresta</span>
+      </div>
+      <div class="map-stat-item">
+        <span class="map-stat-number">10%</span>
+        <span class="map-stat-label">da biodiversidade mundial</span>
+      </div>
+      <div class="map-stat-item">
+        <span class="map-stat-number">30mi</span>
+        <span class="map-stat-label">habitantes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     CTA BANNER
+══════════════════════════════════════════ -->
+<section class="cta-banner">
+  <div class="container cta-banner-content">
+    <h2 class="fade-up" data-i18n="cta.title">
+      A Amazônia está esperando<br>por <span>você</span>
+    </h2>
+    <p class="fade-up" data-i18n="cta.sub">
+      Centenas de atrações naturais, culturais e gastronômicas mapeadas nos 7 estados da Amazônia Legal. O maior bioma do planeta na palma da sua mão.
+    </p>
+    <a href="#estados" class="btn btn-primary fade-up">
+      <i class="fas fa-compass"></i>
+      <span data-i18n="cta.btn">Planejar minha viagem</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     NEWSLETTER
+══════════════════════════════════════════ -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner fade-up">
+      <div class="newsletter-text">
+        <h3 data-i18n="nl.title">Receba novidades da Amazônia</h3>
+        <p data-i18n="nl.sub">Dicas de viagem, temporadas de festivais, aberturas de hospedagens e muito mais, diretamente no seu e-mail.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" data-i18n-ph="nl.placeholder" placeholder="Seu e-mail" required>
+        <button type="submit" data-i18n="nl.btn">Assinar</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="logo-text">
+          <span class="logo-main">Mundo Amazônia</span>
+          <span class="logo-sub" style="color:rgba(255,255,255,.4)">Guia Turístico</span>
+        </div>
+        <p data-i18n="footer.brand.desc">O maior guia turístico da Amazônia Legal. Sete estados, infinitas histórias para contar.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Estados -->
+      <div class="footer-col">
+        <h4 data-i18n="footer.col1.title">Estados</h4>
+        <a href="estados/amazonas.html">Amazonas</a>
+        <a href="estados/para.html">Pará</a>
+        <a href="estados/acre.html">Acre</a>
+        <a href="estados/amapa.html">Amapá</a>
+        <a href="estados/rondonia.html">Rondônia</a>
+        <a href="estados/roraima.html">Roraima</a>
+        <a href="estados/tocantins.html">Tocantins</a>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h4 data-i18n="footer.col2.title">Explore</h4>
+        <a href="atividades.html" data-i18n="footer.col2.todo">O que fazer</a>
+        <a href="gastronomia.html" data-i18n="footer.col2.eat">Onde comer</a>
+        <a href="hospedagem.html" data-i18n="footer.col2.stay">Onde ficar</a>
+        <a href="festivais.html" data-i18n="footer.col2.festivals">Festivais</a>
+        <a href="economia.html" data-i18n="footer.col2.economy">Economia local</a>
+      </div>
+
+      <!-- Informações -->
+      <div class="footer-col">
+        <h4 data-i18n="footer.col3.title">Informações</h4>
+        <a href="sobre.html" data-i18n="footer.col3.about">Sobre a Amazônia</a>
+        <a href="contato.html" data-i18n="footer.col3.contact">Contato</a>
+        <a href="imprensa.html" data-i18n="footer.col3.press">Imprensa</a>
+        <a href="acessibilidade.html" data-i18n="footer.col3.accessibility">Acessibilidade</a>
+        <a href="privacidade.html" data-i18n="footer.col3.privacy">Privacidade</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span data-i18n="footer.copy">© 2025 Mundo Amazônia. Todos os direitos reservados.</span>
+      <span data-i18n="footer.dev">Feito com ♥ para a Amazônia</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

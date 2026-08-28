@@ -1,0 +1,42 @@
+{
+  "nome": "Pará",
+  "capital": "Belém",
+  "descricao": "Porta de entrada da Amazônia. Lar da maior procissão do mundo, do maior mercado a céu aberto da América Latina e da gastronomia paraense que conquistou o planeta.",
+  "municipios": 144,
+  "habitantes": "8,7 milhões",
+  "area": "1.247.954 km²",
+  "temperatura": "27–34°C",
+  "capa": "",
+  "municipios_destaque": [
+    {
+      "nome": "Belém",
+      "descricao": "A 'Cidade das Mangueiras'. Capital do Pará, porta de entrada da Amazônia e sede do Círio de Nazaré — a maior procissão católica do mundo, com 2 milhões de fiéis.",
+      "historia": "Fundada em 1616 pelos portugueses, Belém foi o primeiro grande centro urbano da Amazônia. O Ver-o-Peso, maior mercado a céu aberto da América Latina, existe desde 1688. A gastronomia paraense — tacacá, pato no tucupi, maniçoba — é hoje reconhecida como uma das melhores do Brasil. Em 2025, Belém sediou a COP-30.",
+      "imagem": ""
+    },
+    {
+      "nome": "Santarém",
+      "descricao": "A 'Pérola do Tapajós', no encontro dos rios Tapajós e Amazonas. Alter do Chão, a 'Caribe da Amazônia', fica a apenas 35 km da cidade.",
+      "historia": "Santarém está na foz do Rio Tapajós, no encontro com o Amazonas. As praias brancas de Alter do Chão surgem entre agosto e novembro, quando o nível do rio baixa. A Ilha do Amor e a orla do Rio Tapajós são os pontos mais visitados. A cidade também guarda sítios arqueológicos da Cultura Santarém, com cerâmicas de mais de 3.000 anos.",
+      "imagem": ""
+    },
+    {
+      "nome": "Ilha de Marajó",
+      "descricao": "A maior ilha fluviomarítima do mundo, com 49.606 km². Lar de 600 mil búfalos, cultura marajoara milenar e praias fluviais paradisíacas.",
+      "historia": "A Ilha de Marajó é maior que a Suíça. Os búfalos foram introduzidos no século XVII e hoje são mais numerosos que a população humana. A Cultura Marajoara, que floresceu entre 400 e 1350 d.C., produziu cerâmicas pintadas de extraordinária qualidade — hoje guardadas no Museu do Marajó, em Cachoeira do Arari, e no Museu Goeldi, em Belém.",
+      "imagem": ""
+    },
+    {
+      "nome": "Salinópolis",
+      "descricao": "O balneário paraense. Praias de água doce do Rio Pará com ondas, buritizais e o famoso camarão da região.",
+      "historia": "Salinópolis fica no litoral paraense, onde o Oceano Atlântico se encontra com o estuário do Amazonas. A Praia do Atalaia tem ondas e dunas de areia branca. O camarão de Salinas é famoso em todo o Pará — os barcos chegam diariamente com o pescado fresco.",
+      "imagem": ""
+    },
+    {
+      "nome": "Capitão Poço",
+      "descricao": "A capital paraense da laranja. Produz 60% de toda a laranja do Pará e sedia a Festa da Laranja, o maior evento agrícola do estado.",
+      "historia": "Capitão Poço fica no nordeste do Pará, no chamado 'Portal da Amazônia'. A produção de laranja começou nos anos 1970 e transformou a região. Hoje o município tem mais de 5 mil produtores rurais e exporta laranja para o Sul e Sudeste do país.",
+      "imagem": ""
+    }
+  ]
+}

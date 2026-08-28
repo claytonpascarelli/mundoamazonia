@@ -1,0 +1,36 @@
+{
+  "nome": "Acre",
+  "capital": "Rio Branco",
+  "descricao": "A floresta em sua essência mais pura. Terra de Chico Mendes, dos seringais históricos, do Rio Juruá e de comunidades extrativistas que vivem em harmonia com a natureza.",
+  "municipios": 22,
+  "habitantes": "906 mil",
+  "area": "164.123 km²",
+  "temperatura": "25–33°C",
+  "capa": "",
+  "municipios_destaque": [
+    {
+      "nome": "Rio Branco",
+      "descricao": "Capital do estado, às margens do Rio Acre. Cidade progressista com o Memorial dos Autonomistas, o Parque da Maternidade e a Feira da Liberdade, o maior mercado de artesanato do estado.",
+      "historia": "Rio Branco foi fundada em 1882, às margens do Rio Acre, por migrantes nordestinos que fugiam da seca e vinham trabalhar nos seringais. Hoje é uma capital moderna com museus, parques e a Passarela Pinheiro Machado sobre o Rio Acre.",
+      "imagem": ""
+    },
+    {
+      "nome": "Xapuri",
+      "descricao": "A cidade de Chico Mendes. Lar do líder seringueiro e ambientalista assassinado em 1988, cuja luta criou as Reservas Extrativistas e mudou a história da conservação ambiental.",
+      "historia": "Em Xapuri fica a Casa de Chico Mendes, hoje Patrimônio Histórico, onde o líder seringueiro foi assassinado em 22 de dezembro de 1988. Chico Mendes recebeu o Prêmio Global 500 da ONU e é considerado um dos maiores ambientalistas do século XX. A Reserva Extrativista Chico Mendes (970 mil hectares) foi criada em sua memória.",
+      "imagem": ""
+    },
+    {
+      "nome": "Cruzeiro do Sul",
+      "descricao": "A capital do Vale do Juruá. Porta de entrada para um dos rios mais sinuosos do mundo e para as comunidades indígenas dos povos Kaxinawá e Jaminawa.",
+      "historia": "Cruzeiro do Sul fica no extremo oeste do Acre, próxima à fronteira com o Peru. O Rio Juruá tem 3.283 km de extensão e é um dos mais sinuosos do mundo — para percorrer 500 km em linha reta, o rio percorre mais de 2.000 km. O açaí e o cupuaçu do Vale do Juruá são considerados os mais saborosos da Amazônia.",
+      "imagem": ""
+    },
+    {
+      "nome": "Brasiléia",
+      "descricao": "Na fronteira com a Bolívia, às margens do Rio Acre. Porta de entrada para o turismo binacional e para o Parque Estadual Chandless, o mais remoto do estado.",
+      "historia": "Brasiléia fica em frente a Cobija, capital do Pando boliviano. A fronteira é uma faixa porosa onde a cultura amazônica brasileira e boliviana se mistura. O Parque Estadual Chandless protege um dos últimos remanescentes de floresta intacta do Acre.",
+      "imagem": ""
+    }
+  ]
+}

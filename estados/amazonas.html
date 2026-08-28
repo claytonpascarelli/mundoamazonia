@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia turístico do Amazonas — Manaus, Parintins, Encontro das Águas, Teatro Amazonas, municipios e muito mais.">
+  <title>Amazonas — Mundo Amazônia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/estado.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-bar-left">
+      <span data-i18n="topbar.tagline">O maior bioma do planeta te espera</span>
+    </div>
+    <div class="top-bar-right">
+      <div class="top-bar-social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="pt">PT</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo-link">
+      <img src="../images/logo-mundoamazonia.svg" alt="Mundo Amazônia" class="logo-img">
+    </a>
+    <nav aria-label="Navegação principal">
+      <ul class="nav-main">
+        <li class="nav-item">
+          <a href="../index.html#estados" class="nav-link">
+            <span data-i18n="nav.states">Os Estados</span>
+            <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu dropdown-mega">
+            <div class="mega-header" data-i18n="nav.estados.title">Amazônia Legal — 7 Estados</div>
+            <div class="mega-grid">
+              <a href="amazonas.html" class="mega-state-item">
+                <div class="mega-state-flag">AM</div>
+                <div class="mega-state-info"><strong>Amazonas</strong><span>Manaus</span></div>
+              </a>
+              <a href="para.html" class="mega-state-item">
+                <div class="mega-state-flag">PA</div>
+                <div class="mega-state-info"><strong>Pará</strong><span>Belém</span></div>
+              </a>
+              <a href="acre.html" class="mega-state-item">
+                <div class="mega-state-flag">AC</div>
+                <div class="mega-state-info"><strong>Acre</strong><span>Rio Branco</span></div>
+              </a>
+              <a href="amapa.html" class="mega-state-item">
+                <div class="mega-state-flag">AP</div>
+                <div class="mega-state-info"><strong>Amapá</strong><span>Macapá</span></div>
+              </a>
+              <a href="rondonia.html" class="mega-state-item">
+                <div class="mega-state-flag">RO</div>
+                <div class="mega-state-info"><strong>Rondônia</strong><span>Porto Velho</span></div>
+              </a>
+              <a href="roraima.html" class="mega-state-item">
+                <div class="mega-state-flag">RR</div>
+                <div class="mega-state-info"><strong>Roraima</strong><span>Boa Vista</span></div>
+              </a>
+              <a href="tocantins.html" class="mega-state-item">
+                <div class="mega-state-flag">TO</div>
+                <div class="mega-state-info"><strong>Tocantins</strong><span>Palmas</span></div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="../index.html#atividades" class="nav-link" data-i18n="nav.todo">O que fazer</a></li>
+        <li class="nav-item"><a href="../index.html#gastronomia" class="nav-link" data-i18n="nav.eat">Onde Comer</a></li>
+        <li class="nav-item"><a href="../index.html#hospedagem" class="nav-link" data-i18n="nav.stay">Onde Ficar</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Menu Mobile -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <div class="logo-text"><span class="logo-main" style="color:white">Mundo Amazônia</span></div>
+    <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
+  </div>
+  <a class="mobile-nav-link" data-toggle="mobileStates" href="javascript:void(0)">
+    <span>Os Estados</span> <i class="fas fa-chevron-right"></i>
+  </a>
+  <div id="mobileStates" class="mobile-sub-menu" style="display:none">
+    <a class="mobile-sub-link" href="amazonas.html">Amazonas</a>
+    <a class="mobile-sub-link" href="para.html">Pará</a>
+    <a class="mobile-sub-link" href="acre.html">Acre</a>
+    <a class="mobile-sub-link" href="amapa.html">Amapá</a>
+    <a class="mobile-sub-link" href="rondonia.html">Rondônia</a>
+    <a class="mobile-sub-link" href="roraima.html">Roraima</a>
+    <a class="mobile-sub-link" href="tocantins.html">Tocantins</a>
+  </div>
+  <a class="mobile-nav-link" href="../index.html#atividades"><span>O que fazer</span> <i class="fas fa-chevron-right"></i></a>
+  <a class="mobile-nav-link" href="../index.html#gastronomia"><span>Onde Comer</span> <i class="fas fa-chevron-right"></i></a>
+  <a class="mobile-nav-link" href="../index.html#hospedagem"><span>Onde Ficar</span> <i class="fas fa-chevron-right"></i></a>
+  <div class="mobile-lang-bar">
+    <button class="mobile-lang-btn active" data-lang="pt">PT</button>
+    <button class="mobile-lang-btn" data-lang="en">EN</button>
+    <button class="mobile-lang-btn" data-lang="es">ES</button>
+  </div>
+</div>
+
+<!-- HERO DO ESTADO -->
+<section class="state-hero" style="background-color:#1A4D2E; background-image:url('../images/am-hero.jpg')">
+  <div class="container state-hero-content">
+    <p class="breadcrumb"><a href="../index.html">Início</a> › <a href="../index.html#estados">Estados</a> › Amazonas</p>
+    <div class="state-abbr" style="font-size:0.8rem;padding:4px 14px;margin-bottom:12px">AM</div>
+    <h1>Amazonas</h1>
+    <p>O maior estado do Brasil guarda o maior mistério do mundo: a floresta que pulsa, os rios que conversam entre si e os povos que guardam séculos de sabedoria.</p>
+  </div>
+</section>
+
+<!-- INFO RÁPIDA DO ESTADO -->
+<div class="estado-quick-info">
+  <div class="container">
+    <div class="estado-stats">
+      <div class="estado-stat">
+        <i class="fas fa-city"></i>
+        <div><strong>62</strong><span>Municípios</span></div>
+      </div>
+      <div class="estado-stat">
+        <i class="fas fa-users"></i>
+        <div><strong>4,2 mi</strong><span>Habitantes</span></div>
+      </div>
+      <div class="estado-stat">
+        <i class="fas fa-map"></i>
+        <div><strong>1,57 mi km²</strong><span>Área</span></div>
+      </div>
+      <div class="estado-stat">
+        <i class="fas fa-thermometer-half"></i>
+        <div><strong>26–32°C</strong><span>Temperatura</span></div>
+      </div>
+      <div class="estado-stat">
+        <i class="fas fa-plane"></i>
+        <div><strong>Manaus</strong><span>Capital / Aeroporto</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TABS DE MUNICÍPIOS -->
+<div class="state-tabs" id="muniTabs">
+  <div class="container">
+    <div class="state-tabs-inner">
+      <button class="state-tab-btn active" data-panel="manaus">Manaus</button>
+      <button class="state-tab-btn" data-panel="parintins">Parintins</button>
+      <button class="state-tab-btn" data-panel="novo-airao">Novo Airão</button>
+      <button class="state-tab-btn" data-panel="presidente-figueiredo">Pres. Figueiredo</button>
+      <button class="state-tab-btn" data-panel="tefe">Tefé</button>
+      <button class="state-tab-btn" data-panel="tabatinga">Tabatinga</button>
+      <button class="state-tab-btn" data-panel="itacoatiara">Itacoatiara</button>
+      <button class="state-tab-btn" data-panel="mais">+ Municípios</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAINÉIS DE MUNICÍPIOS -->
+<div id="muniContent">
+
+  <!-- ════ MANAUS ════ -->
+  <div class="muni-panel active" id="manaus">
+    <div class="container">
+
+      <div class="muni-header">
+        <div class="muni-image">
+          <!-- <img src="../images/manaus.jpg" alt="Manaus"> -->
+          <div class="muni-image-placeholder">🌆</div>
+        </div>
+        <div>
+          <span class="section-eyebrow">Capital do Amazonas</span>
+          <h2 class="section-title">Manaus</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            Nascida na confluência do Rio Negro com o Solimões, Manaus é a metrópole da floresta — uma cidade de 2 milhões de pessoas cercada por 360° de selva amazônica. Foi capital mundial da borracha no século XIX e hoje é o principal polo industrial e turístico da Amazônia.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>População</label><span>2,2 milhões</span></div>
+            <div class="muni-info-item"><label>Fundação</label><span>1669</span></div>
+            <div class="muni-info-item"><label>Altitude</label><span>92 m</span></div>
+            <div class="muni-info-item"><label>Temperatura</label><span>26–32°C</span></div>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Encontro das Águas</span>
+            <span class="tag">Teatro Amazonas</span>
+            <span class="tag">MUSA</span>
+            <span class="tag">Zona Franca</span>
+            <span class="tag">Rio Negro</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- História -->
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-book-open"></i> História</h3>
+        <p>Manaus foi fundada em 1669 como Forte São José da Barra do Rio Negro, uma instalação militar portuguesa para defender a Amazônia das invasões estrangeiras. Por quase dois séculos, foi uma cidade de missões e pequenos aldeamentos. A virada chegou com o ciclo da borracha (1850–1912): o látex extraído das seringueiras do Amazonas era indispensável para a Revolução Industrial. A riqueza brutal desse período transformou a cidade — chegaram imigrantes europeus, foram construídos palácios, palacetes e o Teatro Amazonas. O porto de Manaus exportava seringa para o mundo inteiro. Com a quebra do monopólio pela borracha asiática cultivada pelos ingleses, Manaus mergulhou numa longa recessão que durou até a criação da Zona Franca, em 1967, que transformou a cidade novamente — desta vez em polo industrial e comercial.</p>
+      </div>
+
+      <!-- O que fazer -->
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-compass"></i> O que fazer</h3>
+        <div class="activities-grid" style="margin-top:0">
+
+          <div class="activity-card">
+            <div class="activity-img">
+              <div class="activity-img-placeholder">🌊</div>
+              <span class="activity-badge">Natureza</span>
+            </div>
+            <div class="activity-body">
+              <h4>Encontro das Águas</h4>
+              <p>O Rio Negro (preto, ácido, quente) e o Rio Solimões (barrento, neutro, frio) correm lado a lado por mais de 6 km sem se misturar, criando um dos fenômenos naturais mais impressionantes do mundo. É um passeio de barco obrigatório.</p>
+              <div class="activity-meta">
+                <span class="activity-location"><i class="fas fa-map-marker-alt"></i> A 10 km do centro</span>
+                <div class="activity-arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-img">
+              <div class="activity-img-placeholder">🏛️</div>
+              <span class="activity-badge">Cultura</span>
+            </div>
+            <div class="activity-body">
+              <h4>Teatro Amazonas</h4>
+              <p>Inaugurado em 1896, no auge do ciclo da borracha, o Teatro Amazonas é um dos símbolos mais importantes do Brasil. Cúpula com azulejos portugueses na cor do verde, interior em mogno e cristais europeus. Visitas guiadas e apresentações ao vivo.</p>
+              <div class="activity-meta">
+                <span class="activity-location"><i class="fas fa-map-marker-alt"></i> Centro histórico</span>
+                <div class="activity-arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-img">
+              <div class="activity-img-placeholder">🌿</div>
+              <span class="activity-badge">Natureza</span>
+            </div>
+            <div class="activity-body">
+              <h4>MUSA — Museu da Amazônia</h4>
+              <p>Uma das maiores torres de observação de floresta do mundo, com 42 metros de altura. Trilhas suspensas na copa das árvores, viveiros de animais, e trilhas noturnas para ver a floresta "acordar" à noite.</p>
+              <div class="activity-meta">
+                <span class="activity-location"><i class="fas fa-map-marker-alt"></i> Zona Norte</span>
+                <div class="activity-arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-img">
+              <div class="activity-img-placeholder">⛵</div>
+              <span class="activity-badge">Aventura</span>
+            </div>
+            <div class="activity-body">
+              <h4>Turismo de Selva — Rio Negro</h4>
+              <p>Passeios de barco e canoa pelas igarapés do Rio Negro. Avistamento de jacarés, botos-cor-de-rosa, piranhas e a vida das comunidades ribeirinhas. Pacotes de 1 dia a 7 dias com pernoite na floresta.</p>
+              <div class="activity-meta">
+                <span class="activity-location"><i class="fas fa-map-marker-alt"></i> Rio Negro</span>
+                <div class="activity-arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-img">
+              <div class="activity-img-placeholder">🛒</div>
+              <span class="activity-badge">Cultura</span>
+            </div>
+            <div class="activity-body">
+              <h4>Mercado Municipal Adolpho Lisboa</h4>
+              <p>O mercado mais bonito da Amazônia, construído em 1882. Estrutura de ferro inspirada nas Halles de Paris, vendendo peixes de rio, frutas amazônicas, ervas medicinais, artesanato e iguarias locais.</p>
+              <div class="activity-meta">
+                <span class="activity-location"><i class="fas fa-map-marker-alt"></i> Porto</span>
+                <div class="activity-arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-img">
+              <div class="activity-img-placeholder">🦋</div>
+              <span class="activity-badge">Natureza</span>
+            </div>
+            <div class="activity-body">
+              <h4>Reserva Ducke</h4>
+              <p>Uma das maiores reservas florestais urbanas do mundo, com 100 km² de floresta primária dentro da cidade de Manaus. Trilhas para pesquisa e ecoturismo, com espécies endêmicas da floresta amazônica.</p>
+              <div class="activity-meta">
+                <span class="activity-location"><i class="fas fa-map-marker-alt"></i> AM-010</span>
+                <div class="activity-arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Economia -->
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-chart-line"></i> Economia & Produção Local</h3>
+        <div class="economy-cards">
+          <div class="economy-card">
+            <div class="economy-icon">🏭</div>
+            <h4>Zona Franca de Manaus</h4>
+            <p>Criada em 1967, a ZFM é um modelo econômico único no Brasil. Isenção de impostos atraiu montadoras de motos, fábricas de eletrônicos (Samsung, Sony, Honda, Harley-Davidson) e um polo de tecnologia. Gera centenas de milhares de empregos diretos.</p>
+          </div>
+          <div class="economy-card">
+            <div class="economy-icon">🐟</div>
+            <h4>Pesca Artesanal & Industrial</h4>
+            <p>O Amazonas tem a maior biodiversidade de peixes de água doce do mundo. Tambaqui, pirarucu, tucunaré, matrinxã — o peixe é a base da alimentação e da economia de comunidades ribeirinhas.</p>
+          </div>
+          <div class="economy-card">
+            <div class="economy-icon">💜</div>
+            <h4>Açaí & Frutas Nativas</h4>
+            <p>A safra do açaí, cupuaçu, guaraná, pupunha e outras frutas movimenta a economia rural do Amazonas. O guaraná de Maués é uma indicação geográfica protegida, o mais famoso do mundo.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Onde Comer -->
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-utensils"></i> Onde Comer em Manaus</h3>
+        <div class="food-list">
+          <div class="food-item">
+            <div class="food-item-img" style="background:#1A3A2E;display:flex;align-items:center;justify-content:center;font-size:1.8rem">🍽️</div>
+            <div class="food-item-body">
+              <h5>Restaurante Canto da Peixada</h5>
+              <p>Um clássico de Manaus. Caldeirada de tambaqui, pirarucu na grelha e o melhor chibé da cidade. Ambiente rústico e serviço tradicional.</p>
+              <span class="food-cuisine">Culinária Amazônica</span>
+            </div>
+          </div>
+          <div class="food-item">
+            <div class="food-item-img" style="background:#0D3B2A;display:flex;align-items:center;justify-content:center;font-size:1.8rem">⛵</div>
+            <div class="food-item-body">
+              <h5>Flutuante Peixaria Flutuante</h5>
+              <p>Restaurante sobre a água do Rio Negro. O peixe é pescado fresco diariamente. Vista deslumbrante para o Encontro das Águas ao entardecer.</p>
+              <span class="food-cuisine">Frutos do Rio</span>
+            </div>
+          </div>
+          <div class="food-item">
+            <div class="food-item-img" style="background:#1E4A35;display:flex;align-items:center;justify-content:center;font-size:1.8rem">🥑</div>
+            <div class="food-item-body">
+              <h5>Mercado Municipal — Lanchonetes</h5>
+              <p>No segundo andar do Mercado Adolpho Lisboa, as lanchonetes servem o café da manhã amazônico: tapioca, mingau de macaxeira, suco de açaí puro e pão de formigueiro.</p>
+              <span class="food-cuisine">Café da Manhã Local</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Onde Ficar -->
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-bed"></i> Onde Ficar em Manaus</h3>
+        <div class="accom-grid">
+          <div class="accom-card">
+            <div class="accom-img" style="background:#1A4D2E;display:flex;align-items:center;justify-content:center;font-size:3rem">🏨</div>
+            <div class="accom-type-badge">Hotel 5★</div>
+            <div class="accom-body">
+              <h4>Hotel Tropical Manaus</h4>
+              <p class="accom-location"><i class="fas fa-map-marker-alt"></i> Ponta Negra</p>
+              <div class="accom-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p style="font-size:.8rem;color:var(--text-medium);margin:8px 0">Luxo à beira do Rio Negro, com área de lazer, piscinas e passeios de barco saindo da própria marina do hotel.</p>
+              <div class="accom-price">
+                <div class="accom-price-value">A partir de <strong>R$ 280</strong>/noite</div>
+                <a href="#" class="accom-cta">Ver mais <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="accom-card">
+            <div class="accom-img" style="background:#0D3B2A;display:flex;align-items:center;justify-content:center;font-size:3rem">🌿</div>
+            <div class="accom-type-badge">Lodge</div>
+            <div class="accom-body">
+              <h4>Amazon Tupana Lodge</h4>
+              <p class="accom-location"><i class="fas fa-map-marker-alt"></i> Rio Negro · 3h de Manaus</p>
+              <div class="accom-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p style="font-size:.8rem;color:var(--text-medium);margin:8px 0">Lodge de selva premiado, no coração do Parque Nacional do Jaú. Experiência total de imersão na floresta amazônica.</p>
+              <div class="accom-price">
+                <div class="accom-price-value">A partir de <strong>R$ 1.200</strong>/noite</div>
+                <a href="#" class="accom-cta">Ver mais <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="accom-card">
+            <div class="accom-img" style="background:#243D2F;display:flex;align-items:center;justify-content:center;font-size:3rem">🛏️</div>
+            <div class="accom-type-badge">Albergue</div>
+            <div class="accom-body">
+              <h4>Hostel Manaus Central</h4>
+              <p class="accom-location"><i class="fas fa-map-marker-alt"></i> Centro</p>
+              <div class="accom-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p style="font-size:.8rem;color:var(--text-medium);margin:8px 0">Albergue bem localizado, a pé do Teatro Amazonas e do Mercado Municipal. Café da manhã incluso, área social e organização de passeios.</p>
+              <div class="accom-price">
+                <div class="accom-price-value">A partir de <strong>R$ 60</strong>/noite</div>
+                <a href="#" class="accom-cta">Ver mais <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /manaus -->
+
+  <!-- ════ PARINTINS ════ -->
+  <div class="muni-panel" id="parintins">
+    <div class="container">
+
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">🐂</div></div>
+        <div>
+          <span class="section-eyebrow">A Ilha da Magia</span>
+          <h2 class="section-title">Parintins</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            A 369 km de Manaus pelo Rio Amazonas, Parintins é famosa em todo o mundo por causa do Festival Folclórico — o maior do Brasil. Durante três dias no final de junho, a cidade se transforma na capital da arte e da cultura amazônica.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>População</label><span>~115.000</span></div>
+            <div class="muni-info-item"><label>Fundação</label><span>1798</span></div>
+            <div class="muni-info-item"><label>Acesso</label><span>Barco ou avião</span></div>
+            <div class="muni-info-item"><label>Festival</label><span>Último fim de semana de junho</span></div>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Festival do Boi</span>
+            <span class="tag">Boi Garantido</span>
+            <span class="tag">Boi Caprichoso</span>
+            <span class="tag">Ilha Tupinambarana</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-book-open"></i> História & Cultura</h3>
+        <p>Parintins nasceu como uma missão jesuítica no século XVIII, na ilha de Tupinambarana. Sua identidade, porém, foi moldada pelo Festival Folclórico — criado na década de 1960 para preservar a tradição do Boi-Bumbá, que chegou ao Amazonas com os nordestinos que vieram trabalhar nos seringais. O festival cresceu tanto que hoje atrai mais de 100 mil turistas por fim de semana, e o Bumbódromo (o estádio do festival) cabe 35 mil pessoas por noite. A rivalidade entre Garantido (vermelho) e Caprichoso (azul) é apaixonada e colorida — cada boi tem seus torcedores, suas escolas, seus artistas plásticos, seus alegoristas.</p>
+      </div>
+
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-star"></i> O Festival Folclórico de Parintins</h3>
+        <div class="festival-destacado">
+          <div class="festival-card" style="background:rgba(26,61,26,0.08);border:1px solid var(--border)">
+            <div class="festival-icon" style="background:var(--green-pale);font-size:2rem">🐂</div>
+            <div class="festival-state" style="color:var(--green-medium)">Sempre no último fim de semana de junho</div>
+            <h4 style="color:var(--green-darkest)">Um espetáculo para os sentidos</h4>
+            <p style="color:var(--text-medium)">O festival dura três noites. Cada apresentação envolve mais de mil artistas, alegorias gigantescas, fantasias elaboradas, dança, canto, música ao vivo e encenações teatrais que contam a lenda do Boi-Bumbá. A batalha entre Garantido (coração vermelho) e Caprichoso (estrela azul) é decidida por um júri de especialistas em quesitos como toada, levantador de toadas, rainha, cunhã-poranga, galera e outros. O resultado é sempre revelado na noite final, num clímax de emoção coletiva que vale cada real da viagem.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-compass"></i> O que fazer em Parintins</h3>
+        <div class="activities-grid" style="margin-top:0">
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🏟️</div><span class="activity-badge">Cultura</span></div>
+            <div class="activity-body">
+              <h4>Visita ao Bumbódromo</h4>
+              <p>O estádio do festival fica aberto para visitação o ano todo. É possível conhecer as alegorias das apresentações passadas, o museu do boi e a arquitetura única inspirada no boi-bumbá.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Centro</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🎭</div><span class="activity-badge">Cultura</span></div>
+            <div class="activity-body">
+              <h4>Museu do Boi — Garantido e Caprichoso</h4>
+              <p>Os dois galpões-museu guardam as fantasias, alegorias e troféus das décadas de festival. Uma aula de arte popular amazônica única no mundo.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Parintins</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🌊</div><span class="activity-badge">Natureza</span></div>
+            <div class="activity-body">
+              <h4>Lago Macurany & Praias de Rio</h4>
+              <p>Belas praias de rio se formam em torno da ilha de Parintins entre julho e outubro, com águas claras do Rio Amazonas. Perfeito para banho e passeios de canoa.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Parintins</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-chart-line"></i> Economia Local</h3>
+        <div class="economy-cards">
+          <div class="economy-card">
+            <div class="economy-icon">🐂</div>
+            <h4>Turismo do Festival</h4>
+            <p>O Festival Folclórico movimenta dezenas de milhões de reais por ano. Hoteleiros, artesãos, restaurantes e guias trabalham o ano todo para os três dias do evento. É a maior fonte de renda da cidade.</p>
+          </div>
+          <div class="economy-card">
+            <div class="economy-icon">🌾</div>
+            <h4>Agricultura Familiar</h4>
+            <p>A produção de juta, malva, mandioca, e frutas nativas como o guaraná e a pupunha é a base da economia rural da região. Muitas famílias ribeirinhas vivem de roças de várzea às margens do Amazonas.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /parintins -->
+
+  <!-- ════ NOVO AIRÃO ════ -->
+  <div class="muni-panel" id="novo-airao">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">🐬</div></div>
+        <div>
+          <span class="section-eyebrow">Arquipélago de Anavilhanas</span>
+          <h2 class="section-title">Novo Airão</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            Pequena cidade a 115 km de Manaus, Novo Airão é a porta de entrada para o Arquipélago de Anavilhanas — o maior arquipélago fluvial do mundo, com mais de 400 ilhas no Rio Negro. Também é famosa pelos botos-cor-de-rosa que se alimentam nos flutuantes do porto.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>População</label><span>~18.000</span></div>
+            <div class="muni-info-item"><label>Acesso</label><span>AM-352 · 2h de Manaus</span></div>
+            <div class="muni-info-item"><label>Destaques</label><span>Arquipélago de Anavilhanas</span></div>
+            <div class="muni-info-item"><label>Animais</label><span>Botos, jacarés, macacos</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-compass"></i> O que fazer em Novo Airão</h3>
+        <div class="activities-grid" style="margin-top:0">
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🐬</div><span class="activity-badge">Natureza</span></div>
+            <div class="activity-body">
+              <h4>Botos no Flutuante</h4>
+              <p>No porto de Novo Airão, botos-cor-de-rosa vêm comer peixe diretamente da mão dos visitantes. A experiência de nadar e interagir com estes cetáceos é única no mundo.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Porto</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🏝️</div><span class="activity-badge">Natureza</span></div>
+            <div class="activity-body">
+              <h4>Arquipélago de Anavilhanas</h4>
+              <p>Parque Nacional com mais de 400 ilhas no Rio Negro. Na cheia (março a agosto) as ilhas ficam submersas e a floresta fica inundada — pirarucu e tucunaré nadam entre as árvores. Na seca, praias paradisíacas se revelam.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Rio Negro</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🦜</div><span class="activity-badge">Aventura</span></div>
+            <div class="activity-body">
+              <h4>Igarapés & Trilhas na Floresta</h4>
+              <p>Passeios guiados pelos igarapés (canais de floresta) do Rio Negro, trilhas noturnas para observação de animais noturnos, e visitas a comunidades ribeirinhas tradicionais.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Entorno</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /novo-airao -->
+
+  <!-- ════ PRESIDENTE FIGUEIREDO ════ -->
+  <div class="muni-panel" id="presidente-figueiredo">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">💦</div></div>
+        <div>
+          <span class="section-eyebrow">A Terra das Cachoeiras</span>
+          <h2 class="section-title">Presidente Figueiredo</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            A apenas 107 km de Manaus pela BR-174, Presidente Figueiredo é o destino das cachoeiras no Amazonas. São mais de 200 quedas d'água catalogadas na região, de pequenas pozinhas a grandes saltos. Também tem as famosas cavernas da Amazônia — grutas formadas em calcário sob a floresta.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>Cachoeiras</label><span>200+ catalogadas</span></div>
+            <div class="muni-info-item"><label>Distância</label><span>107 km de Manaus</span></div>
+            <div class="muni-info-item"><label>Acesso</label><span>BR-174</span></div>
+            <div class="muni-info-item"><label>Melhor época</label><span>Jun–Nov (seca)</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-compass"></i> O que fazer</h3>
+        <div class="activities-grid" style="margin-top:0">
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">💦</div><span class="activity-badge">Aventura</span></div>
+            <div class="activity-body">
+              <h4>Cachoeiras — Iracema, Urubuí, Santuário</h4>
+              <p>Mais de 200 cachoeiras de todos os tamanhos. As mais famosas são a Cachoeira do Santuário, a de Iracema e a do Urubuí. Trilhas de média dificuldade, com banho garantido.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Zona rural</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🦇</div><span class="activity-badge">Aventura</span></div>
+            <div class="activity-body">
+              <h4>Cavernas da Amazônia</h4>
+              <p>Grutas e cavernas escondidas sob a floresta, com estalactites, estalagmites e espeleotemas únicos. A Gruta do Aroe Jari e outras formações calcárias surpreendem pelos tamanhos e formações.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Pres. Figueiredo</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /presidente-figueiredo -->
+
+  <!-- ════ TEFÉ ════ -->
+  <div class="muni-panel" id="tefe">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">🐊</div></div>
+        <div>
+          <span class="section-eyebrow">Portal do Alto Solimões</span>
+          <h2 class="section-title">Tefé</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            Tefé é o centro de serviços do Alto Solimões e a porta de entrada para a Reserva de Desenvolvimento Sustentável Mamirauá — a maior reserva de várzea do mundo e um dos destinos de ecoturismo mais exclusivos do Brasil.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>Distância</label><span>521 km de Manaus</span></div>
+            <div class="muni-info-item"><label>Acesso</label><span>Avião ou barco (3 dias)</span></div>
+            <div class="muni-info-item"><label>Destaque</label><span>RDS Mamirauá</span></div>
+            <div class="muni-info-item"><label>Fauna</label><span>Uakari-branco, peixe-boi</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-compass"></i> O que fazer</h3>
+        <div class="activities-grid" style="margin-top:0">
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🐒</div><span class="activity-badge">Natureza</span></div>
+            <div class="activity-body">
+              <h4>Reserva Mamirauá</h4>
+              <p>Um dos destinos de ecoturismo mais exclusivos da Amazônia. Florestas inundadas, macacos-uakari, jacarés-açu, pirarucos gigantes e o povo ribeirinho que cuida desta reserva. Hospedagem no Uakari Lodge, um dos melhores eco-lodges do mundo.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Rio Solimões</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🐟</div><span class="activity-badge">Aventura</span></div>
+            <div class="activity-body">
+              <h4>Pesca do Pirarucu</h4>
+              <p>O pirarucu é o maior peixe de escama de água doce do mundo (até 3m!). Na Mamirauá, a pesca é manejada sustentavelmente — os próprios ribeirinhos controlam os estoques e organizam os passeios de pesca.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Mamirauá</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /tefe -->
+
+  <!-- ════ TABATINGA ════ -->
+  <div class="muni-panel" id="tabatinga">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">🌎</div></div>
+        <div>
+          <span class="section-eyebrow">Tríplice Fronteira</span>
+          <h2 class="section-title">Tabatinga</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            Na fronteira do Brasil com a Colômbia e o Peru, Tabatinga é uma das cidades mais exóticas da Amazônia. A "tríplice fronteira" permite visitar três países em um só dia — Letícia (Colômbia) é praticamente uma continuação de Tabatinga, e Islandia (Peru) fica a uma hora de barco.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>Fronteiras</label><span>Colômbia e Peru</span></div>
+            <div class="muni-info-item"><label>Distância</label><span>1.105 km de Manaus</span></div>
+            <div class="muni-info-item"><label>Povo</label><span>Tikuna (maior povo indígena do Brasil)</span></div>
+            <div class="muni-info-item"><label>Acesso</label><span>Avião ou barco (4 dias)</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-compass"></i> O que fazer</h3>
+        <div class="activities-grid" style="margin-top:0">
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🌎</div><span class="activity-badge">Cultura</span></div>
+            <div class="activity-body">
+              <h4>Tríplice Fronteira — 3 países em 1 dia</h4>
+              <p>Sair de Tabatinga (Brasil), caminhar até Letícia (Colômbia) e pegar um barco até Islandia (Peru) — tudo sem precisar de visto entre os países fronteiriços. Uma experiência única de diversidade cultural amazônica.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Fronteira</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-img"><div class="activity-img-placeholder">🪶</div><span class="activity-badge">Povos Originários</span></div>
+            <div class="activity-body">
+              <h4>Museu Magüta — Povo Tikuna</h4>
+              <p>O povo Tikuna é o maior povo indígena do Brasil (50 mil pessoas). O Museu Magüta, criado e gerido pelos próprios Tikuna, é um dos melhores museus indígenas da América do Sul.</p>
+              <div class="activity-meta"><span class="activity-location"><i class="fas fa-map-marker-alt"></i> Benjamin Constant</span><div class="activity-arrow"><i class="fas fa-arrow-right"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /tabatinga -->
+
+  <!-- ════ ITACOATIARA ════ -->
+  <div class="muni-panel" id="itacoatiara">
+    <div class="container">
+      <div class="muni-header">
+        <div class="muni-image"><div class="muni-image-placeholder">🌅</div></div>
+        <div>
+          <span class="section-eyebrow">Cidade das Pedras Pintadas</span>
+          <h2 class="section-title">Itacoatiara</h2>
+          <p style="color:var(--text-medium);line-height:1.7;margin-bottom:20px">
+            A segunda maior cidade do Amazonas, a 270 km de Manaus pela AM-010. O nome tupi significa "pedra pintada" — referência às pinturas rupestres pré-colombianas encontradas nas pedras do Rio Amazonas. Capital do guaraná de Maués e importante polo de exportação de grãos.
+          </p>
+          <div class="muni-info-grid">
+            <div class="muni-info-item"><label>População</label><span>~100.000</span></div>
+            <div class="muni-info-item"><label>Distância</label><span>270 km de Manaus</span></div>
+            <div class="muni-info-item"><label>Produção</label><span>Grãos, guaraná, soja</span></div>
+            <div class="muni-info-item"><label>Festivais</label><span>Festival de Velas do Amazonas</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="muni-sub-section">
+        <h3><i class="fas fa-chart-line"></i> Economia & Destaques</h3>
+        <div class="economy-cards">
+          <div class="economy-card">
+            <div class="economy-icon">🚢</div>
+            <h4>Porto Exportador</h4>
+            <p>Itacoatiara tem um dos maiores portos de grãos do Norte do Brasil, exportando soja e milho produzidos no Mato Grosso e transportados pela Hidrovia do Madeira-Amazonas.</p>
+          </div>
+          <div class="economy-card">
+            <div class="economy-icon">⛵</div>
+            <h4>Festival de Velas</h4>
+            <p>A regata de canoas a vela no Rio Amazonas é uma tradição ribeirinha que vira festival. Embarcações artesanais coloridas disputam no maior rio do mundo em espetáculo único.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /itacoatiara -->
+
+  <!-- ════ MAIS MUNICÍPIOS ════ -->
+  <div class="muni-panel" id="mais">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:40px">
+        <span class="section-eyebrow">Amazonas</span>
+        <h2 class="section-title">Outros municípios em destaque</h2>
+        <p class="section-subtitle">O Amazonas tem 62 municípios, cada um com sua história, sua cultura e suas maravilhas naturais.</p>
+      </div>
+      <div class="estados-lista-grid">
+        <div class="estado-lista-card"><h4>Maués</h4><p>Capital do guaraná — o fruto mais conhecido do Amazonas, com indicação geográfica protegida.</p><div class="tag-list"><span class="tag">Guaraná</span><span class="tag">Rio Maués-Açu</span></div></div>
+        <div class="estado-lista-card"><h4>Borba</h4><p>Às margens do Rio Madeira, com belas praias de rio e pesca esportiva premiada.</p><div class="tag-list"><span class="tag">Rio Madeira</span><span class="tag">Pesca</span></div></div>
+        <div class="estado-lista-card"><h4>Manicoré</h4><p>Povo Parintintin, produção de castanha-do-pará e ecoturismo no Vale do Madeira.</p><div class="tag-list"><span class="tag">Castanha</span><span class="tag">Parintintin</span></div></div>
+        <div class="estado-lista-card"><h4>Coari</h4><p>Sede da produção de gás natural do Amazonas (URUCU), às margens do Lago de Coari.</p><div class="tag-list"><span class="tag">Petróleo</span><span class="tag">Lago de Coari</span></div></div>
+        <div class="estado-lista-card"><h4>São Gabriel da Cachoeira</h4><p>O município mais indígena do Brasil — 90% da população é indígena. Porta do Pico da Neblina, o ponto mais alto do Brasil (2.994m).</p><div class="tag-list"><span class="tag">Pico da Neblina</span><span class="tag">Yanomami</span></div></div>
+        <div class="estado-lista-card"><h4>Barcelos</h4><p>Capital mundial da pesca esportiva do tucunaré. Rio Negro cristalino e arquipélagos inexplorados.</p><div class="tag-list"><span class="tag">Pesca Esportiva</span><span class="tag">Rio Negro</span></div></div>
+      </div>
+    </div>
+  </div><!-- /mais -->
+
+</div><!-- /muniContent -->
+
+
+<!-- TODOS OS MUNICÍPIOS -->
+<section class="todos-municipios">
+  <div class="container">
+    <div class="section-header text-center" style="margin-bottom:40px">
+      <span class="section-eyebrow">Amazonas</span>
+      <h2 class="section-title">Conheça todos os municípios</h2>
+      <p class="section-subtitle">Amazonas tem <strong>62 municípios</strong>. Explore cada canto desse território único. <em style="color:var(--green-primary);font-size:0.88rem">⬆ Primeiros 4 têm fotos e vídeos exclusivos.</em></p>
+    </div>
+    <div class="muni-all-grid fade-up">
+        <a href="../municipios/careiro-castanho.html" class="muni-mini-card">
+          <h4>Careiro Castanho</h4>
+          <p>Lodges na floresta primária, interação com botos e ecoturismo a 80 km de Manaus.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Lodge na Selva</span><span class="muni-mini-tag">Botos</span><span class="muni-mini-tag">Ecoturismo</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-manacapuru" class="muni-mini-card">
+          <h4>Manacapuru</h4>
+          <p>Praias de rio no Lago de Manacapuru, Festival das Tribos Indígenas e cultura ribeirinha.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Praias</span><span class="muni-mini-tag">Festival</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-novo-airao" class="muni-mini-card">
+          <h4>Novo Airão</h4>
+          <p>Portal do Arquipélago de Anavilhanas, botos rosados e a Praia do Açaí no Rio Negro.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Anavilhanas</span><span class="muni-mini-tag">Botos</span><span class="muni-mini-tag">Rio Negro</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-presidente-figueiredo" class="muni-mini-card">
+          <h4>Presidente Figueiredo</h4>
+          <p>Cachoeiras de água cristalina, cavernas e grutas — a 'Terra das Cachoeiras' do AM.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Cachoeiras</span><span class="muni-mini-tag">Grutas</span><span class="muni-mini-tag">Aventura</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-humaita" class="muni-mini-card">
+          <h4>Humaitá</h4>
+          <p>Porta do Sul do Amazonas, às margens do Rio Madeira, com praias e pesca esportiva.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Rio Madeira</span><span class="muni-mini-tag">Pesca</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-tabatinga" class="muni-mini-card">
+          <h4>Tabatinga</h4>
+          <p>Tríplice fronteira Brasil-Colômbia-Peru no extremo oeste amazônico.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Fronteira</span><span class="muni-mini-tag">Tikuna</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-benjamim-constant" class="muni-mini-card">
+          <h4>Benjamim Constant</h4>
+          <p>Comunidades Ticuna às margens do Rio Javari, artesanato e cultura indígena viva.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Ticuna</span><span class="muni-mini-tag">Rio Javari</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-eirunepe" class="muni-mini-card">
+          <h4>Eirunepé</h4>
+          <p>Maior município em extensão do Juruá, centro do extrativismo de borracha.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Borracha</span><span class="muni-mini-tag">Rio Juruá</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-carauari" class="muni-mini-card">
+          <h4>Carauari</h4>
+          <p>Capital do Alto Juruá, praias de rio, cultura ribeirinha e pesca artesanal.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Rio Juruá</span><span class="muni-mini-tag">Praias</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-envira" class="muni-mini-card">
+          <h4>Envira</h4>
+          <p>Extremo sul do Amazonas, fronteira com o Acre, comunidades seringueiras.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Fronteira AC</span><span class="muni-mini-tag">Seringueiros</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-labrea" class="muni-mini-card">
+          <h4>Lábrea</h4>
+          <p>Rio Purus sinuoso, praias e pesca esportiva de tucunaré num dos rios mais belos.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Rio Purus</span><span class="muni-mini-tag">Pesca</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-boca-do-acre" class="muni-mini-card">
+          <h4>Boca do Acre</h4>
+          <p>Convergência dos rios Acre e Purus, porta de entrada para o estado do Acre.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Rio Purus</span><span class="muni-mini-tag">Fronteira AC</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-pauini" class="muni-mini-card">
+          <h4>Pauini</h4>
+          <p>Reserva Extrativista do Médio Purus, castanha e borracha nativa.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">RESEX</span><span class="muni-mini-tag">Castanha</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-tapaua" class="muni-mini-card">
+          <h4>Tapauá</h4>
+          <p>Rio Ipixuna e lagunas sazonais, pesca abundante e ecoturismo comunitário.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Lago</span><span class="muni-mini-tag">Pesca</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-canutama" class="muni-mini-card">
+          <h4>Canutama</h4>
+          <p>Confluência do Rio Ipixuna com o Purus, comunidades ribeirinhas tradicionais.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Ribeirinho</span><span class="muni-mini-tag">Rio Purus</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-iranduba" class="muni-mini-card">
+          <h4>Iranduba</h4>
+          <p>A Ponte Rio Negro une Iranduba a Manaus; turismo rural e agropecuária em expansão.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Ponte Rio Negro</span><span class="muni-mini-tag">Agro</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-autazes" class="muni-mini-card">
+          <h4>Autazes</h4>
+          <p>Terra do povo Mura, praias de areia branca no Rio Autaz e cultura indígena preservada.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Povo Mura</span><span class="muni-mini-tag">Praias</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-nova-olinda-do-norte" class="muni-mini-card">
+          <h4>Nova Olinda do Norte</h4>
+          <p>Festival do Pirarucu e praias do Rio Madeira, no baixo Amazonas.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Pirarucu</span><span class="muni-mini-tag">Rio Madeira</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-codajas" class="muni-mini-card">
+          <h4>Codajás</h4>
+          <p>Capital do cupuaçu no Amazonas, com praias no Lago de Codajás.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Cupuaçu</span><span class="muni-mini-tag">Lago</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-anori" class="muni-mini-card">
+          <h4>Anori</h4>
+          <p>Comunidades ribeirinhas e ecoturismo no Lago de Anori, fauna exuberante.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Ecoturismo</span><span class="muni-mini-tag">Lago</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-fonte-boa" class="muni-mini-card">
+          <h4>Fonte Boa</h4>
+          <p>Porto no Rio Solimões, porta para territórios indígenas do médio Javari.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Rio Solimões</span><span class="muni-mini-tag">Indígena</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-jutai" class="muni-mini-card">
+          <h4>Jutaí</h4>
+          <p>Comunidades Mayoruna e pesca artesanal no Rio Jutaí, floresta intocada.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Mayoruna</span><span class="muni-mini-tag">Biodiversidade</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-maraa" class="muni-mini-card">
+          <h4>Maraã</h4>
+          <p>Porta da RDS Mamirauá, pesquisa científica e observação de peixe-boi.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">RDS Mamirauá</span><span class="muni-mini-tag">Peixe-boi</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-uarini" class="muni-mini-card">
+          <h4>Uarini</h4>
+          <p>Pesca artesanal de pirarucu manejado no Rio Japurá.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Pirarucu</span><span class="muni-mini-tag">Ecoturismo</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-alvaraes" class="muni-mini-card">
+          <h4>Alvarães</h4>
+          <p>Manejo do pirarucu nas lagoas sazonais da várzea amazônica.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Pirarucu</span><span class="muni-mini-tag">Várzea</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-barreirinha" class="muni-mini-card">
+          <h4>Barreirinha</h4>
+          <p>Porto de entrada para a RESEX do Lago de Canaçari, festas ribeirinhas.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">RESEX</span><span class="muni-mini-tag">Ribeirinho</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-nhamunda" class="muni-mini-card">
+          <h4>Nhamundá</h4>
+          <p>Lendária origem das guerreiras Amazonas — rio fronteira AM/PA.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Lenda</span><span class="muni-mini-tag">Rio Nhamundá</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-urucara" class="muni-mini-card">
+          <h4>Urucará</h4>
+          <p>Fronteira do Rio Uatumã, lagos e diversidade de aves — destino de aviturismo.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Aviturismo</span><span class="muni-mini-tag">Lagos</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-silves" class="muni-mini-card">
+          <h4>Silves</h4>
+          <p>Lagos coloridos do Rio Uatumã com pesca e comunidades ribeirinhas.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Lagos</span><span class="muni-mini-tag">Pesca</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-sao-paulo-de-olivenca" class="muni-mini-card">
+          <h4>São Paulo de Olivença</h4>
+          <p>Comunidades Ticuna no alto Solimões, reserva indígena e biodiversidade.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Ticuna</span><span class="muni-mini-tag">Alto Solimões</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-atalaia-do-norte" class="muni-mini-card">
+          <h4>Atalaia do Norte</h4>
+          <p>Vale do Javari, lar de povos em isolamento voluntário — proteção absoluta.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Javari</span><span class="muni-mini-tag">Povos Isolados</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-tonantins" class="muni-mini-card">
+          <h4>Tonantins</h4>
+          <p>No alto Rio Solimões, perto da fronteira com a Colômbia.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Fronteira</span><span class="muni-mini-tag">Solimões</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-santo-antonio-do-ica" class="muni-mini-card">
+          <h4>Santo Antônio do Içá</h4>
+          <p>Povo Ticuna e Tikuna, comunidades na beira do Rio Solimões.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Ticuna</span><span class="muni-mini-tag">Rio Içá</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-ipixuna" class="muni-mini-card">
+          <h4>Ipixuna</h4>
+          <p>Rio Juruá e tradição extrativista, comunidades Kulina (Madija).</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Kulina</span><span class="muni-mini-tag">Rio Juruá</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="../municipios/municipio.html?slug=amazonas-novo-aripuana" class="muni-mini-card">
+          <h4>Novo Aripuanã</h4>
+          <p>Confluência dos rios Aripuanã e Madeira, pesca e agropecuária familiar.</p>
+          <div class="muni-mini-tags"><span class="muni-mini-tag">Rio Madeira</span><span class="muni-mini-tag">Pesca</span></div>
+          <span class="muni-mini-link">Ver município <i class="fas fa-arrow-right"></i></span>
+        </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA VOLTAR -->
+<div style="background:var(--green-ultra);padding:48px 0;text-align:center">
+  <div class="container">
+    <h3 style="font-family:var(--font-display);font-size:1.6rem;color:var(--green-darkest);margin-bottom:12px">Explore todos os estados</h3>
+    <p style="color:var(--text-medium);margin-bottom:24px">A Amazônia Legal tem muito mais para oferecer. Descubra os outros 6 estados.</p>
+    <a href="../index.html#estados" class="btn btn-green"><i class="fas fa-map"></i> Ver todos os estados</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          <span class="logo-main">Mundo Amazônia</span>
+          <span class="logo-sub" style="color:rgba(255,255,255,.4)">Guia Turístico</span>
+        </div>
+        <p data-i18n="footer.brand.desc">O maior guia turístico da Amazônia Legal.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Estados</h4>
+        <a href="amazonas.html">Amazonas</a><a href="para.html">Pará</a><a href="acre.html">Acre</a>
+        <a href="amapa.html">Amapá</a><a href="rondonia.html">Rondônia</a>
+        <a href="roraima.html">Roraima</a><a href="tocantins.html">Tocantins</a>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="../index.html#atividades">O que fazer</a>
+        <a href="../index.html#gastronomia">Onde comer</a>
+        <a href="../index.html#hospedagem">Onde ficar</a>
+        <a href="../index.html#festivais">Festivais</a>
+      </div>
+      <div class="footer-col">
+        <h4>Amazonas</h4>
+        <a href="#" onclick="document.querySelector('[data-panel=manaus]') && document.querySelector('[data-panel=manaus]').click()">Manaus</a>
+        <a href="#" onclick="document.querySelector('[data-panel=parintins]') && document.querySelector('[data-panel=parintins]').click()">Parintins</a>
+        <a href="#" onclick="document.querySelector('[data-panel=tefe]') && document.querySelector('[data-panel=tefe]').click()">Tefé</a>
+        <a href="#" onclick="document.querySelector('[data-panel=tabatinga]') && document.querySelector('[data-panel=tabatinga]').click()">Tabatinga</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Mundo Amazônia. Todos os direitos reservados.</span>
+      <span>Feito com ♥ para a Amazônia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

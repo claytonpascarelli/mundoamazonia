@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "nome": "Festival Folclórico de Parintins", "estado": "Amazonas", "cidade": "Parintins", "mes": "Junho", "descricao": "O maior espetáculo folclórico do Brasil e um dos maiores do mundo. Dois bois — o Garantido (vermelho) e o Caprichoso (azul) — disputam três noites consecutivas num arena de 35 mil pessoas.", "foto": "" },
+    { "nome": "Círio de Nazaré", "estado": "Pará", "cidade": "Belém", "mes": "Outubro", "descricao": "A maior procissão católica do mundo, com mais de 2 milhões de pessoas nas ruas de Belém. Patrimônio Cultural Imaterial da Humanidade pela UNESCO.", "foto": "" },
+    { "nome": "Festa da Laranja de Capitão Poço", "estado": "Pará", "cidade": "Capitão Poço", "mes": "Julho", "descricao": "A maior festa agrícola do Pará. Shows, exposições de produtores rurais, concurso da rainha e degustação de derivados da laranja.", "foto": "" },
+    { "nome": "Festival do Caranguejo", "estado": "Amapá", "cidade": "Macapá", "mes": "Outubro", "descricao": "O caranguejo do Amapá, criado nos manguezais do Estuário Amazônico, é celebrado com produtores, chefs e apreciadores.", "foto": "" },
+    { "nome": "Festa da Safra do Cupuaçu", "estado": "Amazonas", "cidade": "Presidente Figueiredo", "mes": "Janeiro", "descricao": "O cupuaçu é o fruto símbolo da Amazônia. Entre janeiro e março, a safra é celebrada com sucos, sorvetes, chocolates e receitas típicas.", "foto": "" },
+    { "nome": "Festival Açaí", "estado": "Pará", "cidade": "Belém", "mes": "Setembro", "descricao": "O açaí é a fruta-ícone da Amazônia. O festival reúne produtores, chefs e artesãos para mostrar toda a versatilidade do fruto.", "foto": "" },
+    { "nome": "Festa do Peixe de Parintins", "estado": "Amazonas", "cidade": "Parintins", "mes": "Março", "descricao": "No início do defeso, Parintins celebra os rios e os pescadores com uma festa que mistura cultura ribeirinha, música e gastronomia.", "foto": "" },
+    { "nome": "Festival Gastronômico do Jalapão", "estado": "Tocantins", "cidade": "Mateiros", "mes": "Agosto", "descricao": "No auge da colheita do capim dourado, a Comunidade Mumbuca abre suas portas para o artesanato e a culinária do Cerrado tocantinense.", "foto": "" }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "nome": "Tocantins",
+  "capital": "Palmas",
+  "descricao": "O estado mais jovem do Brasil, criado em 1988. Terra do Jalapão — um dos destinos de ecoturismo mais espetaculares da América do Sul — e da Ilha do Bananal, a maior ilha fluvial do mundo.",
+  "municipios": 139,
+  "habitantes": "1,6 milhão",
+  "area": "277.621 km²",
+  "temperatura": "26–38°C",
+  "capa": "",
+  "municipios_destaque": [
+    {
+      "nome": "Palmas",
+      "descricao": "A capital mais jovem do Brasil, fundada em 1989. Cidade planejada às margens do Lago de Palmas (formado pela represa da UHE Lajeado). Praias urbanas, parques e uma infraestrutura moderna.",
+      "historia": "Palmas foi fundada em 20 de maio de 1989, logo após a criação do Estado do Tocantins pela Constituição de 1988. É a única capital brasileira fundada após Brasília. O plano urbanístico foi desenvolvido pelo arquiteto Luiz Fernando Cruvinel Teixeira. A cidade cresceu rapidamente — em 30 anos passou de zero para 310 mil habitantes. O Lago de Palmas, com 172 km², oferece praias de areia branca e esportes náuticos.",
+      "imagem": ""
+    },
+    {
+      "nome": "Jalapão",
+      "descricao": "O paraíso secreto do Brasil. Fervedouros de água cristalina, dunas douradas, cachoeiras e o capim dourado — fibra natural usada para fazer artesanato de ouro que só existe na Serra do Espírito Santo.",
+      "historia": "O Jalapão é uma região semiárida no leste do Tocantins, dentro do Cerrado. Os fervedouros são nascentes de água transparente onde a pressão subterrânea mantém as pessoas flutuando na superfície. O capim dourado (Syngonanthus nitens) floresce apenas entre agosto e setembro e só pode ser colhido depois de maduro — a Comunidade Mumbuca, em Mateiros, detém o conhecimento milenar do artesanato com a fibra, que virou produto de luxo no mundo todo.",
+      "imagem": ""
+    },
+    {
+      "nome": "Ilha do Bananal",
+      "descricao": "A maior ilha fluvial do mundo, formada pelo Rio Araguaia. Território dos povos Karajá, Javaé e Ava-Canoeiro. Parque Nacional do Araguaia com jacarés, capivaras e aves migratórias.",
+      "historia": "A Ilha do Bananal tem 19.162 km² e é formada pelo Rio Araguaia, que se divide em dois braços ao redor dela. É habitada pelos povos Karajá há pelo menos 9.000 anos. Os Karajá produzem as bonecas ritxoko — bonecos de cerâmica com pinturas corporais que são patrimônio cultural imaterial da humanidade pela UNESCO desde 2012.",
+      "imagem": ""
+    },
+    {
+      "nome": "Natividade",
+      "descricao": "A cidade histórica do Tocantins. Fundada em 1734 pelos bandeirantes à procura de ouro. O centro histórico barroco é tombado pelo IPHAN.",
+      "historia": "Natividade foi o maior centro de mineração do Brasil Central no século XVIII. As igrejas barrocas de Nossa Senhora da Natividade (1734) e Nossa Senhora do Rosário dos Pretos guardam retábulos entalhados em madeira e imagens de santos do período colonial. A cidade manteve a arquitetura colonial praticamente intacta.",
+      "imagem": ""
+    }
+  ]
+}

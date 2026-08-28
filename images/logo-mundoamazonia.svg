@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 90" role="img" aria-label="Mundo Amazônia">
+  <title>Mundo Amazônia</title>
+
+  <!-- MUNDO -->
+  <text x="0" y="40"
+    font-family="'Montserrat','Arial Black',Impact,sans-serif"
+    font-weight="900" font-size="36" fill="#111111" letter-spacing="-1">MUNDO</text>
+
+  <!-- AMAZÔNIA -->
+  <text x="0" y="78"
+    font-family="'Montserrat','Arial Black',Impact,sans-serif"
+    font-weight="900" font-size="36" fill="#111111" letter-spacing="-1">AMAZ&#xD4;NIA</text>
+
+  <!-- .com -->
+  <text x="178" y="88"
+    font-family="'Montserrat',Arial,sans-serif"
+    font-weight="700" font-size="16" fill="#28A352">.com</text>
+
+  <!-- === ICON: stylized Amazon S-wave, 3D green === -->
+  <!-- Outer bright green arc (top crescent) -->
+  <path d="M 230 4
+           C 248 0, 280 6, 288 26
+           C 294 42, 286 58, 274 65
+           C 268 68, 260 68, 256 64
+           C 252 60, 252 54, 256 50
+           C 260 46, 266 46, 270 50
+           C 272 52, 272 56, 270 58
+           C 268 60, 264 60, 262 58
+           C 260 56, 262 52, 264 52"
+        fill="none" stroke="#2DC44A" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Darker inner arc (bottom crescent) -->
+  <path d="M 264 30
+           C 258 34, 250 44, 252 56
+           C 254 68, 264 78, 276 82
+           C 286 86, 296 82, 298 74
+           C 300 66, 294 58, 286 56
+           C 280 54, 274 58, 272 64"
+        fill="none" stroke="#1A7A3C" stroke-width="14" stroke-linecap="round"/>
+</svg>

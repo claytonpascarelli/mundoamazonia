@@ -1,0 +1,36 @@
+{
+  "nome": "Roraima",
+  "capital": "Boa Vista",
+  "descricao": "O estado das tepuis e do Monte Roraima. O único estado brasileiro com fronteiras com dois países estrangeiros — Venezuela e Guiana — e lar do Monte Roraima, a montanha que inspirou 'O Mundo Perdido'.",
+  "municipios": 15,
+  "habitantes": "652 mil",
+  "area": "224.300 km²",
+  "temperatura": "24–35°C",
+  "capa": "",
+  "municipios_destaque": [
+    {
+      "nome": "Boa Vista",
+      "descricao": "A única capital brasileira no Hemisfério Norte. Cidade moderna e planejada, às margens do Rio Branco, com belas praias fluviais que surgem entre agosto e março.",
+      "historia": "Boa Vista foi fundada em 1830. É a capital mais nordestina e setentrional do Brasil. O Palácio do Governo tem um grande painel de Heitor dos Prazeres, artista carioca. As praias do Rio Branco — Praia Grande, Praia do Cauamé — são frequentadas durante a seca.",
+      "imagem": ""
+    },
+    {
+      "nome": "Uiramutã / Monte Roraima",
+      "descricao": "O topo do mundo amazônico. O Monte Roraima (2.875 m) é a mais alta tepui do Brasil e ponto de encontro de três países — Brasil, Venezuela e Guiana.",
+      "historia": "O Monte Roraima inspirou Arthur Conan Doyle a escrever 'O Mundo Perdido' (1912). O trekking até o topo leva de 5 a 8 dias pela rota brasileira (via Terra Indígena Raposa Serra do Sol) ou 4 a 5 dias pela rota venezuelana. No topo, um planalto de 31 km² abriga plantas carnívoras, cristais de quartzo e espécies endêmicas encontradas em nenhum outro lugar do planeta.",
+      "imagem": ""
+    },
+    {
+      "nome": "Pacaraima",
+      "descricao": "Na fronteira com a Venezuela, porta de entrada para o Gran Sabana e para o Parque Nacional Canaima, onde fica o Salto Angel — a cachoeira mais alta do mundo.",
+      "historia": "Pacaraima é o principal ponto de entrada de venezuelanos no Brasil. O município fica no limite norte do Brasil, a 215 km de Boa Vista. Do lado venezuelano, o Parque Nacional Canaima tem o Salto Angel (979 m), a maior queda d'água do mundo, e 100 tepuis.",
+      "imagem": ""
+    },
+    {
+      "nome": "Bonfim",
+      "descricao": "Na fronteira com a Guiana, às margens do Rio Tacutu. Ponto de entrada para Georgetown e para a Rupununi Savanna, um dos ecossistemas mais únicos da América do Sul.",
+      "historia": "Bonfim fica em frente a Lethem, cidade guianense. O Rio Tacutu forma a fronteira natural entre o Brasil e a Guiana. A Ponte Internacional sobre o Tacutu conecta os dois países desde 2009.",
+      "imagem": ""
+    }
+  ]
+}

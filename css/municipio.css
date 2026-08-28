@@ -1,0 +1,215 @@
+/* ──────────────────────────────────────────────────────────────
+   MUNDO AMAZÔNIA — municipio.css
+   Estilos para páginas de municípios individuais
+   ────────────────────────────────────────────────────────────── */
+
+/* Hero do município */
+.muni-hero { min-height: 480px; }
+.muni-hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.9);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+.muni-hero-stats {
+  display: flex;
+  gap: 28px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+.muni-hero-stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255,255,255,0.85);
+}
+.muni-hero-stat i { font-size: 1.1rem; color: var(--gold-light); }
+.muni-hero-stat strong { display: block; font-size: 0.92rem; font-weight: 700; line-height: 1.2; }
+.muni-hero-stat small { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); }
+
+/* Sobre */
+.muni-sobre-inner {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 56px;
+  align-items: start;
+}
+.muni-sobre-text p { color: var(--text-medium); line-height: 1.8; margin-bottom: 18px; }
+.muni-sobre-tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
+.muni-sobre-tags .tag { display: inline-flex; align-items: center; gap: 6px; }
+.tag-green {
+  background: var(--green-pale);
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+.tag-blue {
+  background: #E3F0FB;
+  color: #1565C0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* Info box lateral */
+.muni-info-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: 0 4px 20px var(--shadow);
+}
+.muni-info-box h4 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green-darkest);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.muni-info-box h4 i { color: var(--green-primary); }
+.muni-info-box dl { margin: 0; }
+.muni-info-box dt {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-top: 14px;
+}
+.muni-info-box dt:first-child { margin-top: 0; }
+.muni-info-box dd {
+  margin: 4px 0 0;
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+.btn-sm { font-size: 0.82rem; padding: 8px 18px; }
+
+/* Galeria do município */
+.gallery-muni-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.gallery-muni-grid .gallery-item { aspect-ratio: 4/3; }
+.gallery-muni-grid .gallery-item:first-child { grid-column: span 2; aspect-ratio: auto; min-height: 260px; }
+
+.gallery-placeholder {
+  background: rgba(255,255,255,0.06);
+  border: 2px dashed rgba(255,255,255,0.15);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-placeholder-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.3);
+}
+.gallery-placeholder-inner i { font-size: 2rem; }
+.gallery-placeholder-inner span { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+
+/* Food cards simples */
+.food-highlight-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.food-card-simple {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 12px var(--shadow);
+}
+.food-card-simple .food-emoji { font-size: 2.5rem; margin-bottom: 12px; }
+.food-card-simple h4 { font-size: 1rem; font-weight: 700; color: var(--green-darkest); margin-bottom: 8px; }
+.food-card-simple p { font-size: 0.82rem; color: var(--text-medium); line-height: 1.6; margin: 0; }
+
+/* Template "em breve" */
+.muni-empty-state {
+  text-align: center;
+  padding: 80px 24px;
+}
+.muni-empty-state .empty-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: var(--green-pale);
+}
+.muni-empty-state h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--green-darkest);
+  margin-bottom: 12px;
+}
+.muni-empty-state p {
+  color: var(--text-medium);
+  max-width: 480px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+
+/* Template loading state */
+.muni-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--text-light);
+}
+.muni-loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border);
+  border-top-color: var(--green-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Tags de atividade */
+.activity-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green-primary);
+  background: var(--green-pale);
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-right: 4px;
+  margin-top: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 1023px) {
+  .muni-sobre-inner { grid-template-columns: 1fr; }
+  .food-highlight-row { grid-template-columns: repeat(2, 1fr); }
+  .gallery-muni-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-muni-grid .gallery-item:first-child { grid-column: span 2; }
+}
+@media (max-width: 767px) {
+  .muni-hero-stats { gap: 16px; }
+  .food-highlight-row { grid-template-columns: 1fr; }
+  .gallery-muni-grid { grid-template-columns: 1fr 1fr; }
+}

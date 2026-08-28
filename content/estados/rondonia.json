@@ -1,0 +1,36 @@
+{
+  "nome": "Rondônia",
+  "capital": "Porto Velho",
+  "descricao": "O estado das fronteiras e da biodiversidade. Rondônia tem uma das maiores diversidades de peixes de água doce do mundo e o Rio Madeira, o mais rico em peixes da Amazônia.",
+  "municipios": 52,
+  "habitantes": "1,8 milhão",
+  "area": "237.765 km²",
+  "temperatura": "25–34°C",
+  "capa": "",
+  "municipios_destaque": [
+    {
+      "nome": "Porto Velho",
+      "descricao": "Capital às margens do Rio Madeira, o 'Rio dos Peixes'. A Estrada de Ferro Madeira-Mamoré (Ferrovia do Diabo), construída no século XIX, é o principal patrimônio histórico da cidade.",
+      "historia": "A Estrada de Ferro Madeira-Mamoré foi construída entre 1907 e 1912 para contornar os 19 cachoeiras que impediam a navegação no Rio Madeira. Mais de 6.000 trabalhadores morreram de malária e acidentes durante a construção. O Museu Ferroviário de Porto Velho guarda locomotivas, vagões e documentos da época.",
+      "imagem": ""
+    },
+    {
+      "nome": "Guajará-Mirim",
+      "descricao": "Na fronteira com a Bolívia, às margens do Rio Mamoré. A Área de Proteção Ambiental do Rio Guaporé é um dos últimos refúgios do jacaré-negro na Amazônia.",
+      "historia": "Guajará-Mirim é o ponto final da Estrada de Ferro Madeira-Mamoré. No lado boliviano fica Guayaramerín. O Rio Mamoré, que forma a fronteira, abriga tracajás, ariranhas e botos-cor-de-rosa. A APA do Rio Guaporé tem mais de 600 mil hectares de áreas protegidas.",
+      "imagem": ""
+    },
+    {
+      "nome": "Ji-Paraná",
+      "descricao": "O maior município em população do interior de Rondônia. Centro regional do agronegócio e do café Robusta, cultivado com técnicas sustentáveis na floresta.",
+      "historia": "Ji-Paraná é a segunda maior cidade de Rondônia. O café Robusta de Rondônia, cultivado sob sombra de árvores nativas, ganhou qualidade internacional nos últimos anos. O Rio Ji-Paraná, com suas cachoeiras e corredeiras, é usado para rafting e canoagem.",
+      "imagem": ""
+    },
+    {
+      "nome": "Cacoal",
+      "descricao": "Terra do café e das aves. O bosque municipal de Cacoal tem uma das maiores coleções de palmeiras do Brasil e é refúgio para mais de 200 espécies de pássaros.",
+      "historia": "Cacoal foi fundada em 1977 durante a colonização de Rondônia pela INCRA. A cidade tem forte herança do ciclo da borracha e do café. O Café de Cacoal ganhou o Prêmio de Qualidade do Brasil em 2019.",
+      "imagem": ""
+    }
+  ]
+}

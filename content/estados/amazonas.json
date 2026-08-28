@@ -1,0 +1,42 @@
+{
+  "nome": "Amazonas",
+  "capital": "Manaus",
+  "descricao": "O maior estado do Brasil e do mundo em extensão territorial. A Amazônia no seu estado mais puro: floresta densa, rios imensos, fauna exuberante e culturas milenares.",
+  "municipios": 62,
+  "habitantes": "4,2 milhões",
+  "area": "1.559.162 km²",
+  "temperatura": "26–35°C",
+  "capa": "",
+  "municipios_destaque": [
+    {
+      "nome": "Manaus",
+      "descricao": "A capital da Amazônia. Metrópole de 2 milhões de habitantes no coração da floresta, com o Teatro Amazonas, o Encontro das Águas e o Mercado Municipal Adolpho Lisboa.",
+      "historia": "Fundada em 1669 como Forte de São José da Barra do Rio Negro, Manaus viveu seu apogeu durante o Ciclo da Borracha (1850–1920), quando se tornou uma das cidades mais ricas do mundo. O Teatro Amazonas, inaugurado em 1896, foi construído com materiais importados da Europa — azulejos de Portugal, colunas de ferro da Inglaterra, cúpula dourada de Alsácia. Hoje é sede do Festival Amazonas de Ópera. O Encontro das Águas, onde o Rio Negro e o Solimões correm lado a lado por 6 km sem se misturar, é o fenômeno natural mais famoso da Amazônia.",
+      "imagem": ""
+    },
+    {
+      "nome": "Parintins",
+      "descricao": "A ilha do Festival Folclórico. Todo junho, a cidade se divide entre Boi Garantido (vermelho) e Boi Caprichoso (azul) no maior espetáculo folclórico do Brasil.",
+      "historia": "Parintins é uma ilha no Rio Amazonas, a 420 km de Manaus. O Festival Folclórico de Parintins existe desde 1966 e reúne 35 mil espectadores por três noites consecutivas no Bumbódromo — uma arena construída em formato de boi. O festival está na lista do Patrimônio Cultural Imaterial do Brasil.",
+      "imagem": ""
+    },
+    {
+      "nome": "Novo Airão",
+      "descricao": "Portal do Parque Nacional de Anavilhanas, o maior arquipélago fluvial do mundo. Botos-cor-de-rosa, jacarés e a natureza em seu estado mais puro.",
+      "historia": "Novo Airão fica a 115 km de Manaus e é o ponto de entrada para o Parque Nacional de Anavilhanas, com mais de 400 ilhas fluviais no Rio Negro. Os botos-cor-de-rosa (Inia geoffrensis) são a principal atração: podem ser vistos e alimentados em plataformas flutuantes na orla da cidade. O Anavilhanas Jungle Lodge é considerado o melhor lodge de selva do Brasil.",
+      "imagem": ""
+    },
+    {
+      "nome": "Presidente Figueiredo",
+      "descricao": "A terra das cachoeiras. Mais de 100 quedas d'água num raio de 100 km de Manaus, além de grutas, rios cristalinos e a Caverna do Maroaga.",
+      "historia": "Presidente Figueiredo está a 107 km de Manaus pela AM-010. A Cachoeira da Porteira tem uma queda de 37 metros. A Caverna do Maroaga é um sistema de cavernas com estalactites e estalagmites. A cidade também é conhecida pelo mel silvestre produzido pelas abelhas da floresta.",
+      "imagem": ""
+    },
+    {
+      "nome": "Tefé",
+      "descricao": "Ponto de partida para a Reserva de Desenvolvimento Sustentável Mamirauá, onde vivem botos cor-de-rosa, peixe-boi e macacos uacaris em lagos de várzea.",
+      "historia": "Tefé fica a 525 km de Manaus por via aérea. É a base para acessar a Reserva Mamirauá, a primeira Reserva de Desenvolvimento Sustentável do Brasil, criada em 1996. O Uacari Lodge, dentro da reserva, recebe cientistas e turistas que querem observar a biodiversidade da várzea amazônica. O uacari-branco (Cacajao calvus calvus) é um primata endêmico ameaçado de extinção.",
+      "imagem": ""
+    }
+  ]
+}

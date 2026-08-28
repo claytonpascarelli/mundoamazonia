@@ -1,0 +1,30 @@
+{
+  "nome": "Amapá",
+  "capital": "Macapá",
+  "descricao": "O estado atravessado pela linha do Equador. Banhado pelo Atlântico e pelo estuário amazônico, o Amapá tem o menor índice de desmatamento da Amazônia — 70% de floresta intacta.",
+  "municipios": 16,
+  "habitantes": "877 mil",
+  "area": "142.828 km²",
+  "temperatura": "26–33°C",
+  "capa": "",
+  "municipios_destaque": [
+    {
+      "nome": "Macapá",
+      "descricao": "A única capital estadual brasileira cortada pela linha do Equador. A Fortaleza de São José de Macapá (século XVIII) domina a orla do Rio Amazonas.",
+      "historia": "Fundada em 1758, Macapá tem como marco histórico a Fortaleza de São José de Macapá, construída pelos portugueses entre 1764 e 1782. O Marco Zero do Equador divide a cidade ao meio. O Feirão do Caranguejo, na orla, às sextas-feiras, é um dos eventos gastronômicos mais animados da Amazônia.",
+      "imagem": ""
+    },
+    {
+      "nome": "Oiapoque",
+      "descricao": "O fim do Brasil — ou o começo, dependendo de qual lado você está. Na fronteira com a Guiana Francesa, às margens do Rio Oiapoque, na extremidade norte do país.",
+      "historia": "Oiapoque fica a 590 km de Macapá e é o município mais setentrional do estado. A Ponte Binacional Oiapoque-Saint-Georges conecta o Brasil à Guiana Francesa, território da União Europeia, por uma via de 378 metros. A cidade é ponto de contrabando histórico e de comércio fronteiriço intenso.",
+      "imagem": ""
+    },
+    {
+      "nome": "Laranjal do Jari",
+      "descricao": "Às margens do Rio Jari, na fronteira com o Pará. Uma das mais belas áreas de floresta de terra firme do Amapá, com cachoeiras e biodiversidade exuberante.",
+      "historia": "O Rio Jari, que forma a fronteira natural entre Amapá e Pará, foi palco do polêmico 'Projeto Jari' do empresário americano Daniel Ludwig, nos anos 1970 — uma tentativa frustrada de criar o maior monocultivo de celulose do mundo na floresta amazônica.",
+      "imagem": ""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "items": [
+    { "nome": "Encontro das Águas", "estado": "Amazonas", "cidade": "Manaus", "categoria": "Natureza", "descricao": "As águas pretas do Rio Negro e as águas barrentas do Solimões correm lado a lado por 6 km sem se misturar. Passeios de barco saem diariamente do porto de Manaus.", "foto": "" },
+    { "nome": "Teatro Amazonas", "estado": "Amazonas", "cidade": "Manaus", "categoria": "Cultura", "descricao": "Inaugurado em 1896 no auge do ciclo da borracha. Construído com materiais importados da Europa. Sede do Festival Amazonas de Ópera.", "foto": "" },
+    { "nome": "Monte Roraima — Trekking", "estado": "Roraima", "cidade": "Uiramutã", "categoria": "Aventura", "descricao": "Trekking de 5 a 8 dias até o topo do Monte Roraima (2.875 m). No topo, plantas carnívoras, cristais de quartzo e vista para três países.", "foto": "" },
+    { "nome": "Ver-o-Peso", "estado": "Pará", "cidade": "Belém", "categoria": "Cultura", "descricao": "O maior mercado a céu aberto da América Latina. Ervas medicinais, peixes exóticos, frutas raras. Visita obrigatória às 5h quando os barcos chegam.", "foto": "" },
+    { "nome": "Fervedouros do Jalapão", "estado": "Tocantins", "cidade": "Mateiros", "categoria": "Natureza", "descricao": "Nascentes de água cristalina onde a pressão subterrânea é tão forte que mantém as pessoas flutuando na superfície. Temperatura entre 26 e 29°C.", "foto": "" },
+    { "nome": "MUSA — Museu da Amazônia", "estado": "Amazonas", "cidade": "Manaus", "categoria": "Natureza", "descricao": "Torre de observação com 42 metros de altura. Trilhas suspensas nas copas das árvores e avistamento de animais silvestres.", "foto": "" },
+    { "nome": "Alter do Chão", "estado": "Pará", "cidade": "Santarém", "categoria": "Natureza", "descricao": "A 'Caribe da Amazônia'. Praias de areia branca com água verde-esmeralda do Rio Tapajós que surgem entre agosto e novembro.", "foto": "" },
+    { "nome": "Comunidade Yanomami", "estado": "Roraima", "cidade": "Boa Vista", "categoria": "Povos Originários", "descricao": "Visita cultural às aldeias Yanomami. Os Yanomami são um dos povos indígenas mais numerosos da Amazônia, com cerca de 35.000 pessoas.", "foto": "" },
+    { "nome": "Ilha de Marajó", "estado": "Pará", "cidade": "Soure", "categoria": "Natureza", "descricao": "Passeio de búfalo pelas praias da maior ilha fluviomarítima do mundo. Os 600 mil búfalos são mais numerosos que a população humana.", "foto": "" },
+    { "nome": "Artesanato Capim Dourado", "estado": "Tocantins", "cidade": "Mateiros", "categoria": "Cultura", "descricao": "Fibra natural dourada que só existe na Serra do Espírito Santo. A Comunidade Mumbuca tece bolsas, chapéus e bijuterias — peças exclusivas do Brasil.", "foto": "" }
+  ]
+}

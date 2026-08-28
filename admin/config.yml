@@ -1,0 +1,314 @@
+# ═══════════════════════════════════════════════════
+#  MUNDO AMAZÔNIA — Painel de Administração
+#  Decap CMS (ex-Netlify CMS) v3
+#
+#  Para usar localmente: rode `npx decap-server` na
+#  pasta raiz do projeto e acesse /admin
+#
+#  Para usar em produção: ative Netlify Identity +
+#  Git Gateway no painel da Netlify.
+# ═══════════════════════════════════════════════════
+
+backend:
+  name: git-gateway        # Produção (Netlify Identity)
+  branch: main
+  # Para testes locais, comente as linhas acima e use:
+  # name: proxy
+  # proxy_url: http://localhost:8081/api/v1
+
+local_backend: true        # Habilita proxy local automaticamente
+
+media_folder: "images/conteudo"
+public_folder: "/images/conteudo"
+
+# Pasta base dos arquivos de conteúdo editável
+# (formato: JSON por arquivo)
+
+collections:
+
+  # ──────────────────────────────────────────────────
+  # NOTÍCIAS & REPORTAGENS
+  # ──────────────────────────────────────────────────
+  - name: noticias
+    label: "Notícias & Reportagens"
+    label_singular: "Notícia"
+    folder: "content/noticias"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: json
+    fields:
+      - { label: "Título", name: title, widget: string }
+      - { label: "Chamada (subtítulo)", name: subtitle, widget: string, required: false }
+      - { label: "Foto de capa", name: cover, widget: image, required: false }
+      - { label: "Data", name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: "Autor", name: author, widget: string, default: "Redação Mundo Amazônia" }
+      - label: "Categoria"
+        name: category
+        widget: select
+        options:
+          - { label: "Turismo", value: turismo }
+          - { label: "Cultura", value: cultura }
+          - { label: "Gastronomia", value: gastronomia }
+          - { label: "Meio Ambiente", value: meio-ambiente }
+          - { label: "Eventos", value: eventos }
+          - { label: "Economia", value: economia }
+      - label: "Estado relacionado"
+        name: estado
+        widget: select
+        required: false
+        options:
+          - { label: "Amazônia Geral", value: geral }
+          - { label: "Amazonas", value: amazonas }
+          - { label: "Pará", value: para }
+          - { label: "Acre", value: acre }
+          - { label: "Amapá", value: amapa }
+          - { label: "Rondônia", value: rondonia }
+          - { label: "Roraima", value: roraima }
+          - { label: "Tocantins", value: tocantins }
+      - { label: "Conteúdo", name: body, widget: markdown }
+      - { label: "Destaque na home?", name: featured, widget: boolean, default: false }
+
+  # ──────────────────────────────────────────────────
+  # VÍDEOS DO YOUTUBE
+  # ──────────────────────────────────────────────────
+  - name: videos
+    label: "Vídeos do YouTube"
+    label_singular: "Vídeo"
+    folder: "content/videos"
+    create: true
+    slug: "{{slug}}"
+    format: json
+    fields:
+      - { label: "Título do vídeo", name: title, widget: string }
+      - { label: "ID do YouTube (ex: dQw4w9WgXcQ)", name: youtube_id, widget: string, hint: "Cole apenas o código após ?v= na URL do YouTube" }
+      - { label: "Thumbnail personalizada", name: thumbnail, widget: image, required: false, hint: "Opcional — se vazio usa a thumbnail do YouTube" }
+      - { label: "Descrição", name: description, widget: text, required: false }
+      - label: "Estado relacionado"
+        name: estado
+        widget: select
+        options:
+          - { label: "Amazônia Geral", value: geral }
+          - { label: "Amazonas", value: amazonas }
+          - { label: "Pará", value: para }
+          - { label: "Acre", value: acre }
+          - { label: "Amapá", value: amapa }
+          - { label: "Rondônia", value: rondonia }
+          - { label: "Roraima", value: roraima }
+          - { label: "Tocantins", value: tocantins }
+      - { label: "Município", name: municipio, widget: string, required: false }
+      - label: "Categoria"
+        name: category
+        widget: select
+        options:
+          - { label: "Documentário", value: documentario }
+          - { label: "Turismo", value: turismo }
+          - { label: "Cultura & Festival", value: cultura }
+          - { label: "Gastronomia", value: gastronomia }
+          - { label: "Natureza", value: natureza }
+          - { label: "Povos Originários", value: povos }
+      - { label: "Destaque?", name: featured, widget: boolean, default: false }
+
+  # ──────────────────────────────────────────────────
+  # MUNICÍPIOS
+  # ──────────────────────────────────────────────────
+  - name: municipios
+    label: "Municípios"
+    label_singular: "Município"
+    folder: "content/municipios"
+    create: true
+    slug: "{{estado}}-{{slug}}"
+    format: json
+    fields:
+      - { label: "Nome do município", name: title, widget: string }
+      - label: "Estado"
+        name: estado
+        widget: select
+        options:
+          - { label: "Amazonas", value: amazonas }
+          - { label: "Pará", value: para }
+          - { label: "Acre", value: acre }
+          - { label: "Amapá", value: amapa }
+          - { label: "Rondônia", value: rondonia }
+          - { label: "Roraima", value: roraima }
+          - { label: "Tocantins", value: tocantins }
+      - { label: "Foto de capa", name: foto, widget: image, required: false }
+      - { label: "Apelido / Epíteto", name: epiteto, widget: string, required: false, hint: "Ex: 'A Cidade das Cachoeiras', 'O Celeiro da Amazônia'" }
+      - { label: "População (aprox.)", name: populacao, widget: string, required: false }
+      - { label: "Área (km²)", name: area, widget: string, required: false }
+      - { label: "Distância da capital (km)", name: distancia_capital, widget: string, required: false }
+      - { label: "Resumo (2-3 frases)", name: resumo, widget: text }
+      - { label: "História completa", name: historia, widget: markdown, required: false }
+      - label: "O que fazer"
+        name: atividades
+        widget: list
+        required: false
+        fields:
+          - { label: "Nome da atração", name: nome, widget: string }
+          - { label: "Descrição", name: descricao, widget: text }
+          - { label: "Foto", name: foto, widget: image, required: false }
+          - label: "Categoria"
+            name: categoria
+            widget: select
+            options: [Natureza, Cultura, Aventura, Gastronomia, "Povos Originários"]
+      - label: "Onde Ficar"
+        name: hospedagens
+        widget: list
+        required: false
+        fields:
+          - { label: "Nome", name: nome, widget: string }
+          - label: "Tipo"
+            name: tipo
+            widget: select
+            options: [Hotel, Pousada, Lodge, Albergue, Resort, Camping]
+          - { label: "Estrelas (1-5)", name: estrelas, widget: number, min: 1, max: 5, required: false }
+          - { label: "Preço médio/noite", name: preco, widget: string, required: false }
+          - { label: "Foto", name: foto, widget: image, required: false }
+          - { label: "Site", name: site, widget: string, required: false }
+          - { label: "Descrição", name: descricao, widget: text, required: false }
+      - label: "Onde Comer"
+        name: restaurantes
+        widget: list
+        required: false
+        fields:
+          - { label: "Nome", name: nome, widget: string }
+          - { label: "Especialidade", name: especialidade, widget: string }
+          - { label: "Descrição", name: descricao, widget: text, required: false }
+          - { label: "Foto", name: foto, widget: image, required: false }
+      - label: "Fotos do município"
+        name: galeria
+        widget: list
+        required: false
+        fields:
+          - { label: "Foto", name: foto, widget: image }
+          - { label: "Legenda", name: legenda, widget: string, required: false }
+      - { label: "Destaque na página do estado?", name: destaque, widget: boolean, default: false }
+
+  # ──────────────────────────────────────────────────
+  # GALERIA GERAL
+  # ──────────────────────────────────────────────────
+  - name: galeria
+    label: "Galeria de Fotos"
+    label_singular: "Foto"
+    folder: "content/galeria"
+    create: true
+    slug: "{{slug}}"
+    format: json
+    fields:
+      - { label: "Título / Legenda", name: title, widget: string }
+      - { label: "Foto", name: foto, widget: image }
+      - label: "Estado"
+        name: estado
+        widget: select
+        options:
+          - { label: "Amazônia Geral", value: geral }
+          - { label: "Amazonas", value: amazonas }
+          - { label: "Pará", value: para }
+          - { label: "Acre", value: acre }
+          - { label: "Amapá", value: amapa }
+          - { label: "Rondônia", value: rondonia }
+          - { label: "Roraima", value: roraima }
+          - { label: "Tocantins", value: tocantins }
+      - { label: "Município", name: municipio, widget: string, required: false }
+      - label: "Categoria"
+        name: categoria
+        widget: select
+        options: [Natureza, Cultura, Cidade, "Povos & Tradições", Gastronomia, Fauna, Flora]
+      - { label: "Crédito fotográfico", name: credito, widget: string, required: false }
+      - { label: "Destaque na galeria?", name: destaque, widget: boolean, default: false }
+
+  # ──────────────────────────────────────────────────
+  # HOSPEDAGENS (catálogo geral)
+  # ──────────────────────────────────────────────────
+  - name: hospedagens
+    label: "Hospedagens"
+    label_singular: "Hospedagem"
+    folder: "content/hospedagens-cms"
+    create: true
+    slug: "{{estado}}-{{slug}}"
+    format: json
+    fields:
+      - { label: "Nome", name: nome, widget: string }
+      - label: "Estado"
+        name: estado
+        widget: select
+        options:
+          - { label: "Amazonas", value: amazonas }
+          - { label: "Pará", value: para }
+          - { label: "Acre", value: acre }
+          - { label: "Amapá", value: amapa }
+          - { label: "Rondônia", value: rondonia }
+          - { label: "Roraima", value: roraima }
+          - { label: "Tocantins", value: tocantins }
+      - { label: "Município/Cidade", name: municipio, widget: string }
+      - label: "Tipo"
+        name: tipo
+        widget: select
+        options: [Hotel, Pousada, Lodge, Albergue, Resort, Camping, Chalé]
+      - { label: "Estrelas", name: estrelas, widget: number, min: 1, max: 5 }
+      - { label: "Preço médio/noite (R$)", name: preco, widget: string }
+      - { label: "Foto principal", name: foto, widget: image, required: false }
+      - label: "Galeria"
+        name: galeria
+        widget: list
+        required: false
+        fields:
+          - { label: "Foto", name: foto, widget: image }
+      - { label: "Descrição", name: descricao, widget: text }
+      - { label: "Endereço", name: endereco, widget: string, required: false }
+      - { label: "Site", name: site, widget: string, required: false }
+      - { label: "WhatsApp (com DDD)", name: whatsapp, widget: string, required: false }
+      - { label: "Destaque?", name: destaque, widget: boolean, default: false }
+
+  # ──────────────────────────────────────────────────
+  # FESTIVAIS & EVENTOS
+  # ──────────────────────────────────────────────────
+  - name: festivais_cms
+    label: "Festivais & Eventos"
+    label_singular: "Festival"
+    folder: "content/festivais-cms"
+    create: true
+    slug: "{{slug}}"
+    format: json
+    fields:
+      - { label: "Nome do festival", name: nome, widget: string }
+      - label: "Estado"
+        name: estado
+        widget: select
+        options:
+          - { label: "Amazonas", value: amazonas }
+          - { label: "Pará", value: para }
+          - { label: "Acre", value: acre }
+          - { label: "Amapá", value: amapa }
+          - { label: "Rondônia", value: rondonia }
+          - { label: "Roraima", value: roraima }
+          - { label: "Tocantins", value: tocantins }
+      - { label: "Município", name: municipio, widget: string }
+      - label: "Mês"
+        name: mes
+        widget: select
+        options: [Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro, "Anual/Permanente"]
+      - { label: "Período (ex: 3ª semana de Junho)", name: periodo, widget: string, required: false }
+      - { label: "Foto de capa", name: foto, widget: image, required: false }
+      - { label: "Emoji/Ícone", name: icone, widget: string, default: "🎉" }
+      - { label: "Descrição", name: descricao, widget: text }
+      - { label: "História completa", name: historia, widget: markdown, required: false }
+      - { label: "Destaque?", name: destaque, widget: boolean, default: false }
+
+  # ──────────────────────────────────────────────────
+  # CONFIGURAÇÕES DO SITE
+  # ──────────────────────────────────────────────────
+  - name: configuracoes
+    label: "Configurações do Site"
+    files:
+      - label: "Configurações Gerais"
+        name: geral
+        file: "content/configuracoes.json"
+        fields:
+          - { label: "Título do site", name: site_title, widget: string }
+          - { label: "Descrição (SEO)", name: site_description, widget: text }
+          - { label: "Email de contato", name: email, widget: string }
+          - { label: "Instagram (URL)", name: instagram, widget: string, required: false }
+          - { label: "Facebook (URL)", name: facebook, widget: string, required: false }
+          - { label: "YouTube (URL)", name: youtube, widget: string, required: false }
+          - { label: "WhatsApp (com código do país)", name: whatsapp, widget: string, required: false }
+          - { label: "Texto da barra superior", name: topbar_text, widget: string }

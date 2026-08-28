@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "nome": "Hotel Tropical Manaus", "estado": "Amazonas", "cidade": "Manaus", "tipo": "Hotel", "descricao": "O maior hotel da Amazônia, com 594 quartos, 3 piscinas e acesso direto ao Rio Negro. Localizado na Ponta Negra.", "preco": "R$ 280", "estrelas": 5, "site": "www.hoteltropical.com.br", "foto": "" },
+    { "nome": "Anavilhanas Jungle Lodge", "estado": "Amazonas", "cidade": "Novo Airão", "tipo": "Lodge", "descricao": "O melhor lodge de selva do Brasil. Chalés sobre o Rio Negro dentro do Parque Nacional de Anavilhanas.", "preco": "R$ 890", "estrelas": 5, "site": "www.anavilhanaslodge.com.br", "foto": "" },
+    { "nome": "Hilton Belém", "estado": "Pará", "cidade": "Belém", "tipo": "Hotel", "descricao": "Hotel internacional no coração de Belém, a 5 minutos do Ver-o-Peso e do Teatro da Paz.", "preco": "R$ 350", "estrelas": 5, "site": "www.hilton.com", "foto": "" },
+    { "nome": "Pousada Água Viva — Jalapão", "estado": "Tocantins", "cidade": "Mateiros", "tipo": "Pousada", "descricao": "A melhor base para explorar o Jalapão. Chalés rústicos com guias especializados nos fervedouros.", "preco": "R$ 180", "estrelas": 4, "site": "", "foto": "" },
+    { "nome": "Amazônia Hostel", "estado": "Amazonas", "cidade": "Manaus", "tipo": "Hostel", "descricao": "O melhor hostel de Manaus. Centro Histórico, a 10 minutos do Teatro Amazonas.", "preco": "R$ 60", "estrelas": 3, "site": "", "foto": "" },
+    { "nome": "Amazon Dream Resort", "estado": "Amazonas", "cidade": "Presidente Figueiredo", "tipo": "Resort", "descricao": "Resort de aventura a 100 km de Manaus. Chalés na floresta, trilhas para cachoeiras particulares e piscina natural.", "preco": "R$ 650", "estrelas": 4, "site": "", "foto": "" },
+    { "nome": "Hotel Boa Vista Palace", "estado": "Roraima", "cidade": "Boa Vista", "tipo": "Hotel", "descricao": "O principal hotel de Boa Vista, centro da cidade. Piscina, restaurante e o melhor café da manhã do Roraima.", "preco": "R$ 220", "estrelas": 4, "site": "", "foto": "" },
+    { "nome": "Xapuri Rainforest Lodge", "estado": "Acre", "cidade": "Xapuri", "tipo": "Lodge", "descricao": "Lodge na Reserva Extrativista Chico Mendes. Experiência de coabitar com uma comunidade seringueira.", "preco": "R$ 320", "estrelas": 4, "site": "", "foto": "" }
+  ]
+}
