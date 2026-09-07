@@ -10,8 +10,7 @@
 # ═══════════════════════════════════════════════════
 
 backend:
-  name: github
-  repo: claytonpascarelli/mundoamazonia
+  name: git-gateway
   branch: main
 
 local_backend: true        # Para testes locais com `npx decap-server`
