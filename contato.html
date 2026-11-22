@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com o Mundo Amazônia. Dúvidas sobre viagens, parcerias, sugestões de conteúdo e muito mais.">
+  <title>Contato - Mundo Amazônia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contato-layout { display: grid; grid-template-columns: 1fr 400px; gap: 56px; align-items: flex-start; }
+    .contato-form-card { background: white; border-radius: 20px; padding: 40px; box-shadow: 0 4px 24px rgba(0,0,0,.07); }
+    .contato-form-card h2 { font-size: 1.5rem; margin-bottom: 8px; }
+    .contato-form-card p { color: var(--text-medium); font-size: .9rem; margin-bottom: 28px; }
+    .form-field { margin-bottom: 20px; }
+    .form-field label { display: block; font-weight: 600; font-size: .85rem; margin-bottom: 6px; color: var(--text-dark); }
+    .form-field input,
+    .form-field select,
+    .form-field textarea { width: 100%; padding: 12px 16px; border: 2px solid var(--border); border-radius: 10px; font-family: inherit; font-size: .95rem; outline: none; transition: border-color .2s; box-sizing: border-box; }
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus { border-color: var(--green-primary); }
+    .form-field textarea { resize: vertical; min-height: 130px; }
+    .form-submit { background: var(--green-primary); color: white; border: none; padding: 14px 32px; border-radius: 50px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; transition: background .2s; font-family: inherit; }
+    .form-submit:hover { background: var(--green-darkest); }
+    .contato-aside { display: flex; flex-direction: column; gap: 20px; }
+    .contato-info-card { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+    .contato-info-card h4 { font-size: .9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--green-primary); margin-bottom: 16px; }
+    .contact-item { display: flex; gap: 14px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .contact-item:last-child { border-bottom: none; }
+    .contact-item i { color: var(--green-primary); margin-top: 2px; width: 16px; flex-shrink: 0; }
+    .contact-item div strong { display: block; font-size: .9rem; }
+    .contact-item div span { font-size: .82rem; color: var(--text-medium); }
+    .social-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+    .social-btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 50px; font-size: .82rem; font-weight: 600; text-decoration: none; transition: transform .2s; }
+    .social-btn:hover { transform: translateY(-2px); }
+    .social-btn.instagram { background: #E1306C; color: white; }
+    .social-btn.facebook { background: #1877F2; color: white; }
+    .social-btn.youtube { background: #FF0000; color: white; }
+    .social-btn.tiktok { background: #000; color: white; }
+    .faq-section { background: white; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-weight: 700; font-size: .95rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--text-dark); }
+    .faq-q i { color: var(--green-primary); transition: transform .3s; flex-shrink: 0; }
+    .faq-a { font-size: .9rem; color: var(--text-medium); line-height: 1.7; margin-top: 12px; display: none; }
+    .faq-item.open .faq-q i { transform: rotate(180deg); }
+    .faq-item.open .faq-a { display: block; }
+    @media (max-width: 900px) { .contato-layout { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<div id="site-nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/pa-cover.jpg')"></div>
+  <div class="container page-hero-content">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Início</a>
+      <i class="fas fa-chevron-right"></i>
+      <span>Contato</span>
+    </div>
+    <h1>Fale com o<br><span>Mundo Amazônia</span></h1>
+    <p class="page-hero-sub">Dúvidas sobre viagens, sugestões de conteúdo, parcerias ou apenas um olá — estamos aqui.</p>
+  </div>
+</section>
+
+<!-- CONTATO SECTION -->
+<section class="section-pad" style="background:var(--off-white)">
+  <div class="container">
+    <div class="contato-layout fade-up">
+
+      <!-- Formulário -->
+      <div class="contato-form-card">
+        <h2>Envie sua mensagem</h2>
+        <p>Responderemos em até 48 horas nos dias úteis.</p>
+        <form id="contatoForm">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div class="form-field">
+              <label for="nome">Nome *</label>
+              <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-field">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="assunto">Assunto</label>
+            <select id="assunto">
+              <option value="">Selecione um assunto</option>
+              <option value="duvida">Dúvida sobre viagem</option>
+              <option value="conteudo">Sugestão de conteúdo</option>
+              <option value="parceria">Parceria comercial</option>
+              <option value="imprensa">Imprensa / Mídia</option>
+              <option value="hospedagem">Cadastrar hospedagem</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <i class="fas fa-paper-plane"></i> Enviar mensagem
+          </button>
+        </form>
+      </div>
+
+      <!-- Aside -->
+      <div class="contato-aside">
+
+        <div class="contato-info-card">
+          <h4><i class="fas fa-headset"></i> Atendimento</h4>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>E-mail geral</strong>
+              <span>contato@mundoamazonia.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>Resposta em até 24h (dias úteis)</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Horário de atendimento</strong>
+              <span>Seg–Sex: 9h–18h (horário de Brasília)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contato-info-card">
+          <h4><i class="fas fa-share-alt"></i> Redes Sociais</h4>
+          <p style="font-size:.85rem;color:var(--text-medium);margin-bottom:12px">Siga e interaja com o Mundo Amazônia nas redes:</p>
+          <div class="social-row">
+            <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#" class="social-btn facebook"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#" class="social-btn youtube"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="#" class="social-btn tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+          </div>
+        </div>
+
+        <div class="contato-info-card">
+          <h4><i class="fas fa-building"></i> Parcerias e imprensa</h4>
+          <p style="font-size:.85rem;color:var(--text-medium);line-height:1.6">Para parceiros turísticos, assessorias de imprensa, agências e guias locais que desejam divulgar seus serviços na plataforma, entre em contato via e-mail com o assunto "Parceria".</p>
+          <p style="font-size:.85rem;color:var(--text-medium);line-height:1.6;margin-top:8px">Pousadas, lodges, restaurantes e agências de turismo dos 7 estados são bem-vindos ao nosso diretório.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-pad faq-section">
+  <div class="container">
+    <div class="text-center fade-up" style="margin-bottom:40px">
+      <span class="section-eyebrow">Perguntas frequentes</span>
+      <h2 class="section-title">Dúvidas sobre viajar à Amazônia</h2>
+    </div>
+    <div style="max-width:760px;margin:0 auto" class="fade-up">
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Preciso de visto para visitar a Amazônia? <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-a">
+          A Amazônia fica inteiramente dentro do Brasil. Para turistas brasileiros, não é necessário qualquer documento além do RG. Cidadãos de países como Portugal, EUA, da União Europeia, Argentina e Chile entram sem visto (90 dias de turismo). Outros países podem precisar de visto consular — verifique no site do Ministério das Relações Exteriores do Brasil (gov.br/mre).
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Qual a melhor época para visitar a Amazônia? <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-a">
+          Depende do que você quer ver. No <strong>verão amazônico (julho–novembro)</strong>, o nível dos rios está baixo — surgem praias de areia branca, as trilhas ficam mais fáceis e a observação de animais é melhor. No <strong>inverno amazônico (dezembro–junho)</strong>, as chuvas criam o "mar de árvores" da floresta inundada — uma experiência única de canoa pela selva. Para o Festival de Parintins, vá em junho/julho. Para o Círio de Nazaré em Belém, outubro. Para o Jalapão (TO), de maio a setembro.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Como chegar a Manaus e Belém? <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-a">
+          <strong>Manaus:</strong> O Aeroporto Internacional Eduardo Gomes recebe voos diretos de São Paulo (Guarulhos e Congonhas), Rio de Janeiro, Brasília, Recife, Fortaleza e Miami (EUA). Companhias aéreas: LATAM, Gol, Azul, Copa Airlines e American Airlines. <br><br>
+          <strong>Belém:</strong> O Aeroporto Internacional Val-de-Cans recebe voos de São Paulo, Rio, Brasília, Fortaleza, e conexões internacionais. A cidade também é acessível por ônibus rodoviário (BR-316) vindo do Nordeste.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          É necessário tomar vacinas antes de viajar? <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-a">
+          A vacina contra febre amarela é <strong>altamente recomendada</strong> para viagens a áreas florestais e é exigida por alguns países ao retornar do Brasil. Aplique-se com 10 dias de antecedência. Outros cuidados recomendados: uso de repelente com DEET, roupas de manga longa ao entardecer e consulta a um médico especialista em medicina tropical antes da viagem. Malária é rara nas capitais, mas pode ocorrer em zonas rurais — confirme com seu médico.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          É seguro viajar pela floresta amazônica? <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-a">
+          Sim, com as devidas precauções. Os lodges de selva e agências de ecoturismo operam com guias locais treinados e equipamentos de segurança. Para passeios de barco, trilhas e pescaria, sempre contrate guias especializados — eles conhecem os rios, os ventos e a fauna. Nas capitais Manaus e Belém, os mesmos cuidados de segurança de qualquer grande cidade brasileira se aplicam.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Como incluir minha pousada ou lodge no site? <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-a">
+          Entre em contato pelo formulário acima com o assunto "Cadastrar hospedagem". Nossa equipe avalia as propriedades e, se aprovadas, as inclui no diretório do site sem custo inicial. Queremos representar os melhores destinos dos 7 estados — das pousadas ribeirinhas aos grandes resorts.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner fade-up">
+      <div class="newsletter-text">
+        <h3>Receba novidades da Amazônia</h3>
+        <p>Dicas de viagem, temporadas de festivais, aberturas de hospedagens e muito mais, diretamente no seu e-mail.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Seu e-mail" required>
+        <button type="submit">Assinar</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          <span class="logo-main">Mundo Amazônia</span>
+          <span class="logo-sub" style="color:rgba(255,255,255,.4)">Guia Turístico</span>
+        </div>
+        <p>O maior guia turístico da Amazônia Legal. Sete estados, infinitas histórias para contar.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Estados</h4>
+        <a href="estados/amazonas.html">Amazonas</a>
+        <a href="estados/para.html">Pará</a>
+        <a href="estados/acre.html">Acre</a>
+        <a href="estados/amapa.html">Amapá</a>
+        <a href="estados/rondonia.html">Rondônia</a>
+        <a href="estados/roraima.html">Roraima</a>
+        <a href="estados/tocantins.html">Tocantins</a>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="atividades.html">O que fazer</a>
+        <a href="gastronomia.html">Onde comer</a>
+        <a href="hospedagem.html">Onde ficar</a>
+        <a href="festivais.html">Festivais</a>
+        <a href="galeria.html">Galeria</a>
+      </div>
+      <div class="footer-col">
+        <h4>Informações</h4>
+        <a href="sobre.html">Sobre a Amazônia</a>
+        <a href="contato.html">Contato</a>
+        <a href="privacidade.html">Privacidade</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mundo Amazônia. Todos os direitos reservados.</span>
+      <span>Feito com ♥ para a Amazônia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav-loader.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

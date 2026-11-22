@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sobre a Amazônia Legal — história, biodiversidade, povos originários e os 7 estados que compõem a maior floresta tropical do mundo.">
+  <title>Sobre a Amazônia - Mundo Amazônia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .sobre-stats-strip { background: var(--green-primary); padding: 48px 0; }
+    .sobre-stats-grid { display: grid; grid-template-columns: repeat(6,1fr); gap: 24px; text-align: center; }
+    .sobre-stat-num { font-size: 2.2rem; font-weight: 800; color: var(--gold); font-family: Montserrat, sans-serif; line-height: 1; }
+    .sobre-stat-label { font-size: .78rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,.75); margin-top: 6px; }
+    .sobre-two-col { display: flex; gap: 56px; align-items: flex-start; }
+    .sobre-two-col > * { flex: 1; }
+    .sobre-info-box { background: white; border-radius: 20px; padding: 32px; box-shadow: 0 4px 24px rgba(0,0,0,.07); flex: 0 0 360px; }
+    .sobre-info-box h4 { color: var(--green-primary); margin-bottom: 20px; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+    .info-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: .9rem; }
+    .info-row:last-child { border-bottom: none; }
+    .info-row span { color: var(--text-medium); }
+    .states-grid-sobre { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 20px; margin-top: 40px; }
+    .state-card-sobre { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,.06); display: flex; gap: 16px; align-items: flex-start; transition: transform .2s, box-shadow .2s; }
+    .state-card-sobre:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.1); }
+    .state-card-sobre .state-icon { font-size: 2rem; flex-shrink: 0; }
+    .state-card-sobre h5 { margin-bottom: 6px; color: var(--green-primary); font-size: 1rem; }
+    .state-card-sobre p { font-size: .85rem; color: var(--text-medium); line-height: 1.6; margin: 0; }
+    .state-card-sobre a { font-size: .82rem; color: var(--green-primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; margin-top: 8px; }
+    .bio-cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 20px; margin-top: 32px; }
+    .bio-card { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,.06); text-align: center; }
+    .bio-card .bio-num { font-size: 2rem; font-weight: 800; color: var(--green-primary); margin-bottom: 4px; font-family: Montserrat; }
+    .bio-card .bio-label { font-size: .85rem; color: var(--text-medium); line-height: 1.4; }
+    .indigenous-highlight { background: var(--green-darkest); color: white; padding: 72px 0; }
+    .indigenous-inner { display: flex; gap: 48px; align-items: center; }
+    .indigenous-text { flex: 1; }
+    .indigenous-text h2 { color: white; font-size: 2.2rem; margin-bottom: 16px; }
+    .indigenous-text p { color: rgba(255,255,255,.8); line-height: 1.8; margin-bottom: 12px; }
+    .indigenous-facts { flex: 0 0 300px; display: grid; gap: 12px; }
+    .indigenous-fact { background: rgba(255,255,255,.08); border-radius: 12px; padding: 16px 20px; }
+    .indigenous-fact strong { color: var(--gold); font-size: 1.5rem; display: block; margin-bottom: 4px; }
+    .indigenous-fact span { color: rgba(255,255,255,.75); font-size: .85rem; }
+    .hist-timeline { margin-top: 40px; display: grid; gap: 0; }
+    .hist-event { display: flex; gap: 24px; padding: 24px 0; border-left: 3px solid var(--green-primary); padding-left: 28px; position: relative; }
+    .hist-event::before { content: ''; position: absolute; left: -7px; top: 30px; width: 12px; height: 12px; background: var(--green-primary); border-radius: 50%; }
+    .hist-event .hist-year { font-weight: 800; color: var(--green-primary); font-size: 1.1rem; min-width: 60px; padding-top: 2px; }
+    .hist-event .hist-body h5 { font-size: .95rem; margin-bottom: 4px; }
+    .hist-event .hist-body p { font-size: .85rem; color: var(--text-medium); line-height: 1.6; margin: 0; }
+    @media (max-width: 900px) {
+      .sobre-stats-grid { grid-template-columns: repeat(3,1fr); }
+      .sobre-two-col { flex-direction: column; }
+      .sobre-info-box { flex: 1; width: 100%; }
+      .indigenous-inner { flex-direction: column; }
+      .indigenous-facts { width: 100%; display: grid; grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 600px) {
+      .sobre-stats-grid { grid-template-columns: repeat(2,1fr); }
+      .sobre-stat-num { font-size: 1.8rem; }
+      .indigenous-facts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="site-nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/hero-1.jpg')"></div>
+  <div class="container page-hero-content">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Início</a>
+      <i class="fas fa-chevron-right"></i>
+      <span>Sobre a Amazônia</span>
+    </div>
+    <h1>A maior floresta<br>do <span>planeta</span></h1>
+    <p class="page-hero-sub">60% das florestas tropicais que restam na Terra. 10% de toda a biodiversidade do mundo. Um patrimônio que pertence à humanidade.</p>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<section class="sobre-stats-strip">
+  <div class="container">
+    <div class="sobre-stats-grid">
+      <div>
+        <div class="sobre-stat-num">5,2M</div>
+        <div class="sobre-stat-label">km² de floresta</div>
+      </div>
+      <div>
+        <div class="sobre-stat-num">7</div>
+        <div class="sobre-stat-label">estados brasileiros</div>
+      </div>
+      <div>
+        <div class="sobre-stat-num">350+</div>
+        <div class="sobre-stat-label">povos indígenas</div>
+      </div>
+      <div>
+        <div class="sobre-stat-num">40.000+</div>
+        <div class="sobre-stat-label">espécies de plantas</div>
+      </div>
+      <div>
+        <div class="sobre-stat-num">3.000+</div>
+        <div class="sobre-stat-label">espécies de peixes</div>
+      </div>
+      <div>
+        <div class="sobre-stat-num">10%</div>
+        <div class="sobre-stat-label">da biodiversidade mundial</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE É A AMAZÔNIA LEGAL -->
+<section class="section-pad" style="background:var(--off-white)">
+  <div class="container">
+    <div class="sobre-two-col fade-up">
+      <div>
+        <span class="section-eyebrow">O que é</span>
+        <h2 class="section-title" style="text-align:left">Amazônia Legal:<br>um conceito, uma realidade</h2>
+        <p style="color:var(--text-medium);line-height:1.8;margin-bottom:16px">A <strong>Amazônia Legal</strong> é uma delimitação político-administrativa criada em 1953 pelo governo brasileiro, que abrange nove estados e representa 61% do território nacional — 5,2 milhões de km². É a maior floresta tropical do mundo e o maior reservatório de biodiversidade do planeta.</p>
+        <p style="color:var(--text-medium);line-height:1.8;margin-bottom:16px">O <strong>Mundo Amazônia</strong> foca nos <strong>7 estados com maior identidade amazônica</strong>: Amazonas, Pará, Acre, Amapá, Rondônia, Roraima e Tocantins — um universo de culturas, paisagens e experiências incomparáveis, com cidades vibrantes, florestas intocadas e festas que são patrimônio da humanidade.</p>
+        <p style="color:var(--text-medium);line-height:1.8">O Rio Amazonas é o maior rio do mundo em volume d'água, despejando no Atlântico mais água do que os sete maiores rios do mundo juntos. Seus afluentes formam uma rede hidrográfica de 25.000 km — mais de seis vezes a extensão do Brasil de norte a sul.</p>
+      </div>
+      <div class="sobre-info-box">
+        <h4><i class="fas fa-chart-bar"></i> Amazônia em números</h4>
+        <div class="info-row"><span>Área total (Amazônia Legal)</span><strong>5,2 milhões km²</strong></div>
+        <div class="info-row"><span>% do território nacional</span><strong>61%</strong></div>
+        <div class="info-row"><span>População (7 estados)</span><strong>~27 milhões</strong></div>
+        <div class="info-row"><span>Maior rio por volume</span><strong>Rio Amazonas</strong></div>
+        <div class="info-row"><span>Peixes de água doce</span><strong>3.000+ espécies</strong></div>
+        <div class="info-row"><span>Aves registradas</span><strong>1.300+ espécies</strong></div>
+        <div class="info-row"><span>Mamíferos</span><strong>400+ espécies</strong></div>
+        <div class="info-row"><span>Povos indígenas</span><strong>350+ etnias</strong></div>
+        <div class="info-row"><span>Línguas indígenas</span><strong>274 idiomas</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OS 7 ESTADOS -->
+<section class="section-pad" style="background:white">
+  <div class="container">
+    <div class="text-center fade-up" style="margin-bottom:16px">
+      <span class="section-eyebrow">Os destinos</span>
+      <h2 class="section-title">Os 7 estados da Amazônia</h2>
+      <p class="section-subtitle">Cada estado é um mundo — do Oceano Atlântico às serras de Roraima, das dunas do Jalapão à floresta densa do Acre.</p>
+    </div>
+    <div class="states-grid-sobre fade-up">
+
+      <a href="estados/amazonas.html" style="text-decoration:none">
+        <div class="state-card-sobre">
+          <div class="state-icon">🌊</div>
+          <div>
+            <h5>Amazonas</h5>
+            <p>O maior estado do Brasil (1,5M km²). Capital Manaus, Teatro Amazonas, Encontro das Águas, Parintins, selvas intocadas.</p>
+            <span class="see-link">Explorar <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="estados/para.html" style="text-decoration:none">
+        <div class="state-card-sobre">
+          <div class="state-icon">🦀</div>
+          <div>
+            <h5>Pará</h5>
+            <p>Belém (Cidade Criativa da Gastronomia pela UNESCO), Ilha de Marajó, Alter do Chão, Círio de Nazaré e o Ver-o-Peso.</p>
+            <span class="see-link">Explorar <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="estados/acre.html" style="text-decoration:none">
+        <div class="state-card-sobre">
+          <div class="state-icon">🌿</div>
+          <div>
+            <h5>Acre</h5>
+            <p>O estado da floresta pura. Rio Branco, Reserva Extrativista Chico Mendes, seringueiros, geopolítica da borracha e Xapuri.</p>
+            <span class="see-link">Explorar <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="estados/amapa.html" style="text-decoration:none">
+        <div class="state-card-sobre">
+          <div class="state-icon">🌍</div>
+          <div>
+            <h5>Amapá</h5>
+            <p>O estado mais próximo do equador. Macapá está exatamente sobre a linha. Caranguejo do manguezal, fortaleza colonial e Oiapoque.</p>
+            <span class="see-link">Explorar <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="estados/rondonia.html" style="text-decoration:none">
+        <div class="state-card-sobre">
+          <div class="state-icon">🏞️</div>
+          <div>
+            <h5>Rondônia</h5>
+            <p>Porto Velho à beira do Madeira, Guajará-Mirim na fronteira boliviana, Pimenta Bueno e rios de água cristalina para rafting.</p>
+            <span class="see-link">Explorar <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="estados/roraima.html" style="text-decoration:none">
+        <div class="state-card-sobre">
+          <div class="state-icon">⛰️</div>
+          <div>
+            <h5>Roraima</h5>
+            <p>Tepuis e o Monte Roraima (2.875m), Parque Nacional do Monte Roraima, povos Yanomami e Macuxi, e a fronteira com Venezuela.</p>
+            <span class="see-link">Explorar <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="estados/tocantins.html" style="text-decoration:none">
+        <div class="state-card-sobre">
+          <div class="state-icon">🏜️</div>
+          <div>
+            <h5>Tocantins</h5>
+            <p>Jalapão com seus fervedouros e dunas douradas, Ilha do Bananal (maior ilha fluvial do mundo), Palmas e o Parque do Cantão.</p>
+            <span class="see-link">Explorar <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- BIODIVERSIDADE -->
+<section class="section-pad" style="background:var(--off-white)">
+  <div class="container">
+    <div class="text-center fade-up" style="margin-bottom:16px">
+      <span class="section-eyebrow">Natureza</span>
+      <h2 class="section-title">Uma biodiversidade sem par</h2>
+      <p class="section-subtitle">Nenhum lugar na Terra concentra tanta vida num só território. A cada hectare de floresta amazônica, a ciência descobre novas espécies.</p>
+    </div>
+    <div class="bio-cards fade-up">
+      <div class="bio-card">
+        <div class="bio-num">40.000+</div>
+        <div class="bio-label">espécies de plantas vasculares — 10% de todas as existentes no mundo</div>
+      </div>
+      <div class="bio-card">
+        <div class="bio-num">3.000+</div>
+        <div class="bio-label">espécies de peixes de água doce — mais do que qualquer oceano</div>
+      </div>
+      <div class="bio-card">
+        <div class="bio-num">1.300+</div>
+        <div class="bio-label">espécies de aves — 15% de todas as aves do planeta</div>
+      </div>
+      <div class="bio-card">
+        <div class="bio-num">400+</div>
+        <div class="bio-label">espécies de mamíferos, incluindo onças, lontras gigantes e botos rosas</div>
+      </div>
+      <div class="bio-card">
+        <div class="bio-num">60%</div>
+        <div class="bio-label">de toda a água doce superficial do Brasil drena pela bacia amazônica</div>
+      </div>
+      <div class="bio-card">
+        <div class="bio-num">20%</div>
+        <div class="bio-label">do oxigênio produzido por plantas em todo o planeta vem da Amazônia</div>
+      </div>
+    </div>
+    <div style="background:white;border-radius:20px;padding:32px;margin-top:40px;box-shadow:0 2px 12px rgba(0,0,0,.06)" class="fade-up">
+      <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <h4 style="color:var(--green-primary);margin-bottom:12px">🐬 Boto-cor-de-rosa (Inia geoffrensis)</h4>
+          <p style="font-size:.9rem;color:var(--text-medium);line-height:1.7;margin:0">O boto rosa é o maior golfinho de água doce do mundo e um dos símbolos da Amazônia. Encontrado nos rios Negro, Solimões, Amazonas e Madeira, é possível nadar com eles em pontos específicos como o Lago do Castanho (Careiro Castanho) e o Rio Negro perto de Novo Airão.</p>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <h4 style="color:var(--green-primary);margin-bottom:12px">🐆 Onça-pintada (Panthera onca)</h4>
+          <p style="font-size:.9rem;color:var(--text-medium);line-height:1.7;margin:0">A maior felina das Américas e o terceiro maior felino do mundo. A Amazônia abriga a maior população de onças do planeta. Avistamentos são raros mas possíveis em lodges de selva — especialmente na região do Mamirauá e do Rio Negro.</p>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <h4 style="color:var(--green-primary);margin-bottom:12px">🐊 Jacaré-açu (Melanosuchus niger)</h4>
+          <p style="font-size:.9rem;color:var(--text-medium);line-height:1.7;margin:0">O maior crocodiliano das Américas, podendo chegar a 6 metros. Os passeios noturnos de barco para observação de jacarés são um clássico dos lodges de selva. Com lanternas, os olhos brilham laranja na escuridão dos igarapés.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POVOS ORIGINÁRIOS -->
+<section class="indigenous-highlight">
+  <div class="container">
+    <div class="indigenous-inner fade-up">
+      <div class="indigenous-text">
+        <span class="section-eyebrow" style="color:var(--gold)">Humanidade</span>
+        <h2>Mais de 350 povos,<br>274 línguas</h2>
+        <p>A Amazônia é o maior laboratório de diversidade cultural do planeta. Mais de 350 etnias indígenas vivem na região, falando 274 línguas distintas — muitas das quais não têm escrita e correm risco de extinção. Seus conhecimentos sobre plantas medicinais, astronomia, agricultura e manejo da floresta são patrimônio inestimável.</p>
+        <p>Dos Yanomami de Roraima aos Munduruku do Pará, dos Kaxinawá do Acre aos Paiter-Suruí de Rondônia — cada povo tem sua cosmologia, sua arte, sua medicina e sua relação única com a floresta. O turismo com curadoria e consentimento das comunidades é a forma mais rica de conhecer essa diversidade.</p>
+        <a href="atividades.html" class="btn btn-secondary" style="margin-top:20px">Ver turismo cultural <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="indigenous-facts">
+        <div class="indigenous-fact">
+          <strong>350+</strong>
+          <span>etnias indígenas na Amazônia Legal</span>
+        </div>
+        <div class="indigenous-fact">
+          <strong>274</strong>
+          <span>línguas indígenas ainda faladas</span>
+        </div>
+        <div class="indigenous-fact">
+          <strong>13%</strong>
+          <span>do território nacional são terras indígenas</span>
+        </div>
+        <div class="indigenous-fact">
+          <strong>114</strong>
+          <span>povos em isolamento voluntário</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section class="section-pad" style="background:white">
+  <div class="container">
+    <div class="text-center fade-up" style="margin-bottom:48px">
+      <span class="section-eyebrow">Contexto</span>
+      <h2 class="section-title">Uma breve história amazônica</h2>
+    </div>
+    <div style="max-width:720px;margin:0 auto" class="fade-up">
+      <div class="hist-timeline">
+        <div class="hist-event">
+          <div class="hist-year">~15.000<br><small style="font-weight:400;font-size:.75rem">anos atrás</small></div>
+          <div class="hist-body">
+            <h5>Primeiros habitantes</h5>
+            <p>Humanos chegam à Amazônia vindos do Norte. Os registros mais antigos de ocupação humana na região datam de 11.000 a.C., com culturas sofisticadas que moldaram a própria floresta com as "terras pretas" (terra preta de índio).</p>
+          </div>
+        </div>
+        <div class="hist-event">
+          <div class="hist-year">1542</div>
+          <div class="hist-body">
+            <h5>Francisco de Orellana desce o Rio Amazonas</h5>
+            <p>O conquistador espanhol Orellana percorre o rio de ponta a ponta, sendo o primeiro europeu a fazê-lo. Seus relatos de cidades ricas às margens do rio deram origem ao mito do El Dorado.</p>
+          </div>
+        </div>
+        <div class="hist-event">
+          <div class="hist-year">1850–1912</div>
+          <div class="hist-body">
+            <h5>O Ciclo da Borracha</h5>
+            <p>O látex amazônico alimenta a Revolução Industrial. Manaus e Belém tornam-se cidades ricas com arquitetura europeia. O Teatro Amazonas (1896) é o símbolo desta era. Mil de seringueiros migram para o Acre. A riqueza é desigual e o colapso chega com o plantio de seringueiras na Ásia.</p>
+          </div>
+        </div>
+        <div class="hist-event">
+          <div class="hist-year">1953</div>
+          <div class="hist-body">
+            <h5>Criação da Amazônia Legal</h5>
+            <p>O governo Getúlio Vargas cria o conceito de "Amazônia Legal" para fins de planejamento regional. A Superintendência do Plano de Valorização Econômica da Amazônia (SPVEA) é fundada.</p>
+          </div>
+        </div>
+        <div class="hist-event">
+          <div class="hist-year">1988</div>
+          <div class="hist-body">
+            <h5>Chico Mendes e o movimento seringueiro</h5>
+            <p>O líder seringueiro Chico Mendes, de Xapuri (AC), é assassinado após liderar um movimento internacional de defesa da floresta. Seu legado cria as primeiras Reservas Extrativistas no Acre e transforma o debate ambiental mundial.</p>
+          </div>
+        </div>
+        <div class="hist-event">
+          <div class="hist-year">hoje</div>
+          <div class="hist-body">
+            <h5>O maior destino ecoturístico do mundo</h5>
+            <p>A Amazônia concentra mais atenção global do que nunca — como alvo de conservação, destino ecoturístico e palco de culturas milenares que ainda ensinam o mundo sobre sustentabilidade. Visitá-la é ajudar a preservá-la.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE O SITE -->
+<section class="section-pad" style="background:var(--green-ultra)">
+  <div class="container">
+    <div style="max-width:760px;margin:0 auto;text-align:center" class="fade-up">
+      <span class="section-eyebrow">Quem somos</span>
+      <h2 class="section-title">O Mundo Amazônia</h2>
+      <p style="color:var(--text-medium);line-height:1.8;font-size:1.05rem;margin-bottom:16px">O <strong>Mundo Amazônia</strong> é o maior guia turístico independente da Amazônia Legal. Nasceu da necessidade de um portal que realmente representasse a riqueza dos 7 estados — não apenas Manaus e Belém, mas os 450+ municípios, suas festas, sua gastronomia, seus povos e suas belezas naturais.</p>
+      <p style="color:var(--text-medium);line-height:1.8;margin-bottom:16px">As informações são levantadas em campo — com viagens, entrevistas, fotografias e filmagens nos próprios municípios. O projeto acredita que o turismo consciente é uma das melhores ferramentas de preservação da floresta: quem conhece, protege.</p>
+      <p style="color:var(--text-medium);line-height:1.8">Nosso conteúdo está disponível em português, inglês e espanhol — porque a Amazônia pertence ao mundo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-pad" style="background:var(--green-primary);text-align:center">
+  <div class="container fade-up">
+    <h2 style="color:white;font-size:2.2rem;margin-bottom:16px">Pronto para explorar?</h2>
+    <p style="color:rgba(255,255,255,.8);max-width:520px;margin:0 auto 32px;line-height:1.7">Escolha um estado, descubra um município, planeje sua viagem. A Amazônia espera por você.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="estados/amazonas.html" class="btn btn-secondary">Começar pelo Amazonas</a>
+      <a href="estados/para.html" class="btn" style="background:white;color:var(--green-primary)">Explorar o Pará</a>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner fade-up">
+      <div class="newsletter-text">
+        <h3>Receba novidades da Amazônia</h3>
+        <p>Dicas de viagem, temporadas de festivais, aberturas de hospedagens e muito mais, diretamente no seu e-mail.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Seu e-mail" required>
+        <button type="submit">Assinar</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          <span class="logo-main">Mundo Amazônia</span>
+          <span class="logo-sub" style="color:rgba(255,255,255,.4)">Guia Turístico</span>
+        </div>
+        <p>O maior guia turístico da Amazônia Legal. Sete estados, infinitas histórias para contar.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Estados</h4>
+        <a href="estados/amazonas.html">Amazonas</a>
+        <a href="estados/para.html">Pará</a>
+        <a href="estados/acre.html">Acre</a>
+        <a href="estados/amapa.html">Amapá</a>
+        <a href="estados/rondonia.html">Rondônia</a>
+        <a href="estados/roraima.html">Roraima</a>
+        <a href="estados/tocantins.html">Tocantins</a>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="atividades.html">O que fazer</a>
+        <a href="gastronomia.html">Onde comer</a>
+        <a href="hospedagem.html">Onde ficar</a>
+        <a href="festivais.html">Festivais</a>
+        <a href="galeria.html">Galeria</a>
+      </div>
+      <div class="footer-col">
+        <h4>Informações</h4>
+        <a href="sobre.html">Sobre a Amazônia</a>
+        <a href="contato.html">Contato</a>
+        <a href="privacidade.html">Privacidade</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mundo Amazônia. Todos os direitos reservados.</span>
+      <span>Feito com ♥ para a Amazônia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav-loader.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
