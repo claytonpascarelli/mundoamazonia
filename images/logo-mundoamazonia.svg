@@ -16,30 +16,39 @@
     font-family="'Montserrat',Arial,sans-serif"
     font-weight="700" font-size="16" fill="#408344">.com</text>
 
-  <!-- === SÍMBOLO ORGÂNICO 3D ===
-       Forma 1 (verde escuro): silhueta total — aparece como profundidade/borda esquerda
-       Forma 2 (verde claro): face frontal — desloca para direita, expondo tira escura à esquerda
+  <!--
+    SÍMBOLO: folha amazônica 3D
+    - Verde escuro = silhueta completa (fundo)
+    - Verde claro  = face frontal com concavidade CENTRAL pronunciada
+      A borda esquerda do verde claro:
+        topo  → próxima à borda do escuro (pouco escuro visível)
+        meio  → recua muito para a direita (escuro exposto no centro)
+        base  → retorna para a esquerda (pouco escuro visível)
+      Resultado: escuro aparece como "nervura" central da folha 3D
   -->
 
-  <!-- Verde escuro — base completa (profundidade visível à esquerda) -->
+  <!-- Verde escuro: silhueta completa da folha -->
   <path d="
-    M 244 6
-    C 260 0, 300 4, 306 28
-    C 312 52, 298 78, 278 86
-    C 262 92, 242 82, 242 66
-    C 242 50, 256 44, 258 36
-    C 260 28, 250 14, 244 6
+    M 248 4
+    C 266 -2, 314 7, 316 38
+    C 318 66, 300 87, 280 89
+    C 262 92, 238 80, 238 60
+    C 238 42, 252 30, 254 18
+    C 256 8, 250 6, 248 4
     Z
-  " fill="#226B2E"/>
+  " fill="#1D6B28"/>
 
-  <!-- Verde claro — face frontal (deslocada à direita, mostra profundidade) -->
+  <!-- Verde claro: face frontal com concavidade CENTRAL profunda
+       Borda esquerda sai perto do escuro no topo e na base,
+       mas recua MUITO para a direita no centro → nervura/dobra da folha
+  -->
   <path d="
-    M 260 4
-    C 276 -2, 310 4, 314 28
-    C 318 52, 302 78, 282 86
-    C 268 92, 258 82, 260 66
-    C 262 50, 276 44, 278 36
-    C 280 28, 272 12, 260 4
+    M 253 4
+    C 270 -2, 314 7, 316 38
+    C 318 66, 300 87, 280 89
+    C 266 92, 252 80, 252 64
+    C 251 52, 282 42, 284 36
+    C 286 24, 270 10, 253 4
     Z
   " fill="#3DB844"/>
 </svg>
